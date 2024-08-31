@@ -1,7 +1,7 @@
 ﻿
 using Hackerrank.Challenges;
 
-var challenges = new _005_StairCase();
+var challenges = new _009_RecursiveDigitSum();
 
 
-challenges.StairCase(50);
+challenges.RecursiveDigitSum("148148148", 9);
