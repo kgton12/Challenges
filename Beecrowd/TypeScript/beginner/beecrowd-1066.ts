@@ -2,8 +2,8 @@ import { readFileSync } from "node:fs";
 import { EOL } from "node:os";
 import { stdin } from "node:process";
 
-// const inputs = readFileSync(stdin.fd, { encoding: "utf8" }).split(EOL,5).map(Number);
-const inputs = [-5, 0, -3, -4, 12];
+const inputs = readFileSync(stdin.fd, { encoding: "utf8" }).split(EOL,5).map(Number);
+// const inputs = [-5, 0, -3, -4, 12];
 
 let odd = 0;
 let even = 0;
