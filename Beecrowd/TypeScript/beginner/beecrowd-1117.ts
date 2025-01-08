@@ -14,10 +14,10 @@ let count = 0;
 for (const element of input) {
 	if (element < 0 || element > 10) {
 		console.log("nota invalida");
-	}else{
-        sum += element;
-        count++;
-    }
+	} else {
+		sum += element;
+		count++;
+	}
 
 	if (count === 2) {
 		console.log(`media = ${(sum / 2).toFixed(2)}`);

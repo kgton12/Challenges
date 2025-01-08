@@ -3,12 +3,14 @@ import { EOL } from "node:os";
 import { stdin } from "node:process";
 
 const input = readFileSync(stdin.fd, { encoding: "utf8" }).split(EOL).map(Number);
-// const input = [13];
 
-const number = input[0];
+console.log(fibonacci(input[0]));
 
-for (let index = 1; index < 10000; index++) {
-	if (index % number === 2) {
-		console.log(index);
+function fibonacci(n: number): string {
+	const fib = [0, 1];
+	for (let i = 2; i < n; i++) {
+		fib[i] = fib[i - 1] + fib[i - 2];
 	}
+	return fib.slice(0, n).join(" ");
 }
+
