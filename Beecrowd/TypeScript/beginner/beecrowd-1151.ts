@@ -13,4 +13,3 @@ function fibonacci(n: number): string {
 	}
 	return fib.slice(0, n).join(" ");
 }
-

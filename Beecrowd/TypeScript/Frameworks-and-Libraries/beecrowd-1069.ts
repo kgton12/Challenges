@@ -10,7 +10,7 @@ const findWord = "<>";
 const quantityOfTests = Number.parseInt(input.shift() ?? "");
 
 for (let i = 0; i < quantityOfTests; i++) {
-    const result = searchAndDeleteWord(input[i].replace(/\./g, ""), findWord);
+	const result = searchAndDeleteWord(input[i].replace(/\./g, ""), findWord);
 
 	console.log(result);
 }

@@ -7,34 +7,32 @@ const input = readFileSync(stdin.fd, { encoding: "utf8" }).split(EOL).map(Number
 
 const values = input.filter((value) => value > 0 && value < 5);
 const fuelTypes = {
-    gasoline: 0,
-    alcohol:0,
-    diesel:0
-}
+	gasoline: 0,
+	alcohol: 0,
+	diesel: 0,
+};
 
 for (const element of values) {
+	if (element === 4) {
+		break;
+	}
 
-    if(element === 4){
-        break;
-    }
-    
-    switch (element) {
-        case 1:
-            fuelTypes.alcohol++;
-            break;
-        case 2:
-            fuelTypes.gasoline++;
-            break;
-        case 3:
-            fuelTypes.diesel++;
-            break;
-        default:
-            break;
-    }
+	switch (element) {
+		case 1:
+			fuelTypes.alcohol++;
+			break;
+		case 2:
+			fuelTypes.gasoline++;
+			break;
+		case 3:
+			fuelTypes.diesel++;
+			break;
+		default:
+			break;
+	}
 }
 
 console.log("MUITO OBRIGADO");
 console.log(`Alcool: ${fuelTypes.alcohol}`);
 console.log(`Gasolina: ${fuelTypes.gasoline}`);
 console.log(`Diesel: ${fuelTypes.diesel}`);
-
