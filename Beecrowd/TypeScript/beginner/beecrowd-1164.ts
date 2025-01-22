@@ -9,7 +9,6 @@ const i = input.shift() ?? 0;
 let arrayElements: number[] = [];
 
 for (let index = 0; index < i; index++) {
-
 	const element = input[index];
 	for (let index = 1; index < element; index++) {
 		if (element % index === 0) {
@@ -18,7 +17,7 @@ for (let index = 0; index < i; index++) {
 	}
 
 	console.log(isPerfectNumber(arrayElements, element) ? `${element} eh perfeito` : `${element} nao eh perfeito`);
-    arrayElements=[];
+	arrayElements = [];
 }
 
 function isPerfectNumber(arr: number[], n: number): boolean {
