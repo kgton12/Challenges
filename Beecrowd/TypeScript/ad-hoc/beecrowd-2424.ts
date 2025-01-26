@@ -11,5 +11,5 @@ const input = readFileSync(join(__dirname, "..", "file.txt"), "utf-8").split(EOL
 
 const [X, Y] = (input.shift() ?? "0").split(" ").map(Number);
 
-console.log( X >= 0 && X <= 432 && Y >= 0 && Y <= 468 ? "dentro" : "fora");
+console.log(X >= 0 && X <= 432 && Y >= 0 && Y <= 468 ? "dentro" : "fora");
 //

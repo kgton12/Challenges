@@ -9,10 +9,10 @@ const input = readFileSync(stdin.fd, { encoding: "utf8" }).split(EOL);
 // const __dirname = dirname(__filename);
 // const input = readFileSync(join(__dirname, "..", "file.txt"), "utf-8").split(EOL);
 
-const [N, K] = (input.shift() ?? "0").split(" ").map(Number);
+let sum = 0.0;
 
-const names = input.slice(0, N);
-const orderedNames = names.sort();
+for (let index = 1; index < input.length; index += 2) {
+	sum += Number.parseFloat(input[index]);
+}
 
-console.log(orderedNames[K - 1]);
-//
+console.log((sum / (input.length / 2)).toFixed(1));

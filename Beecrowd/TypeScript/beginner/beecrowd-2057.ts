@@ -9,10 +9,13 @@ const input = readFileSync(stdin.fd, { encoding: "utf8" }).split(EOL);
 // const __dirname = dirname(__filename);
 // const input = readFileSync(join(__dirname, "..", "file.txt"), "utf-8").split(EOL);
 
-const [N, K] = (input.shift() ?? "0").split(" ").map(Number);
+const [S, T, F] = input[0].split(" ").map(Number);
+const sum = S + T + F;
 
-const names = input.slice(0, N);
-const orderedNames = names.sort();
-
-console.log(orderedNames[K - 1]);
-//
+if (sum >= 24) {
+	console.log(sum - 24);
+} else if (sum < 0) {
+	console.log(sum + 24);
+} else {
+	console.log(sum);
+}

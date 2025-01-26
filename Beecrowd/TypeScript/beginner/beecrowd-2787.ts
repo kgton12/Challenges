@@ -9,10 +9,21 @@ const input = readFileSync(stdin.fd, { encoding: "utf8" }).split(EOL);
 // const __dirname = dirname(__filename);
 // const input = readFileSync(join(__dirname, "..", "file.txt"), "utf-8").split(EOL);
 
-const [N, K] = (input.shift() ?? "0").split(" ").map(Number);
+const [L, C] = [input[0], input[1]].map(Number);
+const Chess: number[][] = [];
+let bool = true;
 
-const names = input.slice(0, N);
-const orderedNames = names.sort();
+for (let i = 0; i < L; i++) {
+	Chess[i] = [];
+	for (let j = 0; j < C; j++) {
+		Chess[i][j] = bool ? 1 : 0;
+		bool = !bool;
+	}
+	if (Chess[i][0] === 1) {
+		bool = false;
+	} else {
+		bool = true;
+	}
+}
 
-console.log(orderedNames[K - 1]);
-//
+console.log(Chess[L - 1][C - 1]);
