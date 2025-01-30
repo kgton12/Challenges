@@ -19,4 +19,3 @@ function twoSum(numberArray: number[], target: number): number[] {
 	}
 	return result;
 }
-

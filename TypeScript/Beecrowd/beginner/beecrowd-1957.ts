@@ -16,10 +16,10 @@ let resultQuotient = -1;
 let output = "";
 
 while (remainingInput > 0) {
-    resultQuotient = Math.floor(remainingInput / 16);
-    const remainder = remainingInput % 16;
-    output = hexDigits[remainder] + output;
-    remainingInput = resultQuotient;
+	resultQuotient = Math.floor(remainingInput / 16);
+	const remainder = remainingInput % 16;
+	output = hexDigits[remainder] + output;
+	remainingInput = resultQuotient;
 }
 
 console.log(output);
