@@ -4,7 +4,7 @@
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
-		"dev": "node index.ts",
+		"dev": "node Leetcode/30-Days-of-JavaScript/2620-Counter.ts",
 		"format": "npx @biomejs/biome check --write ."
 	},
 	"keywords": [],
