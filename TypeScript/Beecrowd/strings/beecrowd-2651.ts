@@ -8,21 +8,12 @@ const input = readFileSync(stdin.fd, { encoding: "utf8" }).split(EOL);
 // const __filename = fileURLToPath(import.meta.url);
 // const __dirname = dirname(__filename);
 // const input = readFileSync(join(__dirname, "..", "file.txt"), "utf-8").split(EOL);
+const zelda = "zelda".toUpperCase();
 
 for (const element of input) {
 	if (element.trim() === "") break;
 
-	const isValidPassword = validatePassword(element);
+	const response = element.toLocaleUpperCase().includes(zelda);
 
-	console.log(isValidPassword ? "Senha valida." : "Senha invalida.");
-}
-
-function validatePassword(p: string): boolean {
-	const hasUpperCase = /[A-Z]/.test(p);
-	const hasLowerCase = /[a-z]/.test(p);
-	const hasNumber = /[0-9]/.test(p);
-	const hasNoSpecialChar = /^[a-zA-Z0-9]+$/.test(p);
-	const correctSize = p.length >= 6 && p.length <= 32;
-
-	return hasUpperCase && hasLowerCase && hasNumber && hasNoSpecialChar && correctSize;
+	console.log(response ? "Link Bolado" : "Link Tranquilo");
 }
