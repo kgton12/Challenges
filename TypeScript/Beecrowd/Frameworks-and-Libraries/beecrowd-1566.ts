@@ -8,12 +8,17 @@ const input = readFileSync(stdin.fd, { encoding: "utf8" }).split(EOL);
 // const __filename = fileURLToPath(import.meta.url);
 // const __dirname = dirname(__filename);
 // const input = readFileSync(join(__dirname, "..", "file.txt"), "utf-8").split(EOL);
-const zelda = "zelda".toUpperCase();
 
-for (const element of input) {
-	if (element.trim() === "") break;
+const I = Number(input.shift() ?? "0") * 2;
 
-	const response = element.toLocaleUpperCase().includes(zelda);
+for (let index = 0; index < I; index += 2) {
+	const quantityPeople = Number(input[index]);
+	const heightOfPeople = input[index + 1]
+		.split(" ")
+		.slice(0, quantityPeople)
+		.map(Number)
+		.sort((a, b) => a - b)
+		.join(" ");
 
-	console.log(response ? "Link Bolado" : "Link Tranquilo");
+	console.log(heightOfPeople);
 }

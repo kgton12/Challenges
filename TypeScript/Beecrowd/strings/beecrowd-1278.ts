@@ -47,4 +47,3 @@ function leftPadStrings(arr: string[]): string[] {
 	const maxLength = Math.max(...arr.map((value) => value.length));
 	return arr.map((value) => value.padStart(maxLength, " "));
 }
-

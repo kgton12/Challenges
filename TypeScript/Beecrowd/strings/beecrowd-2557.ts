@@ -8,12 +8,28 @@ const input = readFileSync(stdin.fd, { encoding: "utf8" }).split(EOL);
 // const __filename = fileURLToPath(import.meta.url);
 // const __dirname = dirname(__filename);
 // const input = readFileSync(join(__dirname, "..", "file.txt"), "utf-8").split(EOL);
-const zelda = "zelda".toUpperCase();
+
+const regex = /[+=]/g;
 
 for (const element of input) {
 	if (element.trim() === "") break;
 
-	const response = element.toLocaleUpperCase().includes(zelda);
+	const [R, L, J] = element.split(regex);
+	console.log(ruleOfThree(R, L, J));
+}
 
-	console.log(response ? "Link Bolado" : "Link Tranquilo");
+function ruleOfThree(r: string, l: string, j: string): number {
+	if (Number.isNaN(Number(r))) {
+		return Number(j) - Number(l);
+	}
+
+	if (Number.isNaN(Number(l))) {
+		return Number(j) - Number(r);
+	}
+
+	if (Number.isNaN(Number(j))) {
+		return Number(r) + Number(l);
+	}
+
+	return 0;
 }

@@ -8,12 +8,13 @@ const input = readFileSync(stdin.fd, { encoding: "utf8" }).split(EOL);
 // const __filename = fileURLToPath(import.meta.url);
 // const __dirname = dirname(__filename);
 // const input = readFileSync(join(__dirname, "..", "file.txt"), "utf-8").split(EOL);
-const zelda = "zelda".toUpperCase();
 
 for (const element of input) {
-	if (element.trim() === "") break;
+	const endLine = element.trim().split(" ").length;
+	if (endLine === 1) break;
 
-	const response = element.toLocaleUpperCase().includes(zelda);
-
-	console.log(response ? "Link Bolado" : "Link Tranquilo");
+	const [Q, D, P] = element.split(" ").map(Number);
+	const pages = Number.parseInt(((Q * D * P) / (P - Q)).toString());
+	const stringPage = pages > 1 ? "paginas" : "pagina";
+	console.log(`${pages} ${stringPage}`);
 }

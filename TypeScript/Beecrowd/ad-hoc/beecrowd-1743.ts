@@ -8,12 +8,14 @@ const input = readFileSync(stdin.fd, { encoding: "utf8" }).split(EOL);
 // const __filename = fileURLToPath(import.meta.url);
 // const __dirname = dirname(__filename);
 // const input = readFileSync(join(__dirname, "..", "file.txt"), "utf-8").split(EOL);
-const zelda = "zelda".toUpperCase();
 
-for (const element of input) {
-	if (element.trim() === "") break;
+const plug = (input.shift() ?? "0").split(" ").map(Number);
+const socket = (input.shift() ?? "0").split(" ").map(Number);
 
-	const response = element.toLocaleUpperCase().includes(zelda);
+let isCompatible = true;
 
-	console.log(response ? "Link Bolado" : "Link Tranquilo");
+for (let index = 0; index < 5; index++) {
+	if (plug[index] === socket[index]) isCompatible = false;
 }
+
+console.log(isCompatible ? "Y" : "N");

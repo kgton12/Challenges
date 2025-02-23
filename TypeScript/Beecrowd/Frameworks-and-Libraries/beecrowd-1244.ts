@@ -8,12 +8,23 @@ const input = readFileSync(stdin.fd, { encoding: "utf8" }).split(EOL);
 // const __filename = fileURLToPath(import.meta.url);
 // const __dirname = dirname(__filename);
 // const input = readFileSync(join(__dirname, "..", "file.txt"), "utf-8").split(EOL);
-const zelda = "zelda".toUpperCase();
 
-for (const element of input) {
-	if (element.trim() === "") break;
+const I = Number(input.shift() ?? "0");
 
-	const response = element.toLocaleUpperCase().includes(zelda);
+const wordArray = input.slice(0, I);
 
-	console.log(response ? "Link Bolado" : "Link Tranquilo");
+for (const element of wordArray) {
+	console.log(orderWordsBySize(element));
+}
+function orderWordsBySize(str: string): string {
+	const strArray = str.split(" ");
+
+	const orderedStrArray = strArray.map((value) => {
+		return { length: value.length, value };
+	});
+
+	return orderedStrArray
+		.sort((a, b) => b.length - a.length)
+		.map((value) => value.value)
+		.join(" ");
 }

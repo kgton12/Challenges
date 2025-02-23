@@ -31,5 +31,3 @@ for (const element of input) {
 	}
 	i++;
 }
-
-

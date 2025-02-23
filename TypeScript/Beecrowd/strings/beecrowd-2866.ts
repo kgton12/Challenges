@@ -8,12 +8,17 @@ const input = readFileSync(stdin.fd, { encoding: "utf8" }).split(EOL);
 // const __filename = fileURLToPath(import.meta.url);
 // const __dirname = dirname(__filename);
 // const input = readFileSync(join(__dirname, "..", "file.txt"), "utf-8").split(EOL);
-const zelda = "zelda".toUpperCase();
 
-for (const element of input) {
-	if (element.trim() === "") break;
+const I = Number(input.shift() ?? "0");
 
-	const response = element.toLocaleUpperCase().includes(zelda);
+for (let index = 0; index < I; index++) {
+	const secretWord = discoverPassword(input[index]);
+	console.log(secretWord);
+}
 
-	console.log(response ? "Link Bolado" : "Link Tranquilo");
+function discoverPassword(str: string): string {
+	const regex = /[^a-z]/g;
+	const word = str.replace(regex, "");
+
+	return word.split("").reverse().join("");
 }

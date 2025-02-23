@@ -42,4 +42,4 @@ function generateTriangleWords(word: string): string[] {
 
 	return wordArray;
 }
-// 
+//
