@@ -21,8 +21,7 @@ for (const element of input) {
 
 	if (i === 36601) break;
 
-	const isInvalidNumber =
-		regexAlphabet.test(N) || Number.isNaN(Number(N)) || Number(N) > 2147483647 || N === "" || Number(N) < 0;
+	const isInvalidNumber = regexAlphabet.test(N) || Number.isNaN(Number(N)) || Number(N) > 2147483647 || N === "" || Number(N) < 0;
 
 	if (isInvalidNumber) {
 		console.log("error");

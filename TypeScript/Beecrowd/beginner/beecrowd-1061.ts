@@ -11,14 +11,10 @@ const input = readFileSync(stdin.fd, { encoding: "utf8" }).split(EOL);
 
 const regex = /[^0-9]/g;
 const initDay = (input.shift() ?? "").replace(regex, "").padStart(2, "0");
-const [initHour, initMinutes, initSeconds] = (input.shift() ?? "")
-	.split(":")
-	.map((element) => element.trim().padStart(2, "0"));
+const [initHour, initMinutes, initSeconds] = (input.shift() ?? "").split(":").map((element) => element.trim().padStart(2, "0"));
 
 const endDay = (input.shift() ?? "").replace(regex, "").padStart(2, "0");
-const [endHour, endMinutes, endSeconds] = (input.shift() ?? "")
-	.split(":")
-	.map((element) => element.trim().padStart(2, "0"));
+const [endHour, endMinutes, endSeconds] = (input.shift() ?? "").split(":").map((element) => element.trim().padStart(2, "0"));
 
 const initTimeStamp = new Date(`2025-01-${initDay}T${initHour}:${initMinutes}:${initSeconds}.000Z`);
 const endTimeStamp = new Date(`2025-01-${endDay}T${endHour}:${endMinutes}:${endSeconds}.000Z`);
