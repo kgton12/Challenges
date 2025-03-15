@@ -13,5 +13,3 @@ export function wave(str: string): Array<string> {
 
 	return output;
 }
-
-

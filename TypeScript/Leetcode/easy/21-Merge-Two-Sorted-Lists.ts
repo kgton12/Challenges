@@ -10,19 +10,21 @@ class ListNode {
 function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode | null {
 	const dummy = new ListNode();
 	let cur = dummy;
+	let auxList2 = list2;
+	let auxList1 = list1;
 
-	while (list1 && list2) {
-		if (list1.val > list2.val) {
-			cur.next = list2;
-			list2 = list2.next;
+	while (auxList1 && auxList2) {
+		if (auxList1.val > auxList2.val) {
+			cur.next = auxList2;
+			auxList2 = auxList2.next;
 		} else {
-			cur.next = list1;
-			list1 = list1.next;
+			cur.next = auxList1;
+			auxList1 = auxList1.next;
 		}
 		cur = cur.next;
 	}
 
-	cur.next = list1 || list2;
+	cur.next = auxList1 || auxList2;
 
 	return dummy.next;
 }
