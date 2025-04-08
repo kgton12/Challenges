@@ -1,9 +1,9 @@
-type ToBeOrNotToBe = {
-	toBe: (toBe: any) => boolean;
-	notToBe: (val: any) => boolean;
+type ToBeOrNotToBe<T> = {
+	toBe: (value: T) => boolean;
+	notToBe: (value: T) => boolean;
 };
 
-function expect<T>(val: T): ToBeOrNotToBe {
+function expect<T>(val: T): ToBeOrNotToBe<T> {
 	return {
 		notToBe: (toBe: T) => {
 			if (val !== toBe) return true;
@@ -18,7 +18,5 @@ function expect<T>(val: T): ToBeOrNotToBe {
 	};
 }
 
-
-console.log(expect(5).toBe(null));
+console.log(expect<number | null>(5).toBe(null));
 console.log(expect(5).notToBe(5));
-
