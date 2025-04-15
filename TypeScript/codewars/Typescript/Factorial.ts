@@ -7,5 +7,3 @@ export function factorial(n: number) {
 	}
 	return sum;
 }
-
-
