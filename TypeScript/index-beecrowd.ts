@@ -11,6 +11,3 @@ function readFileInput(): string {
 }
 
 const inputData = readFileInput().split(EOL);
-
-
-

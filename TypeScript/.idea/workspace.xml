@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d40e9709-2a85-499b-8c0c-3131b4f11d2b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TypeScript.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorted-yes-no-how.ts" beforeDir="false" afterPath="$PROJECT_DIR$/codewars/Typescript/Sorted-yes-no-how.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/The-Wide-Mouthed-frog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/codewars/Typescript/The-Wide-Mouthed-frog.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codewars/Typescript/Factorial.ts" beforeDir="false" afterPath="$PROJECT_DIR$/codewars/Typescript/Factorial.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codewars/Typescript/Find-out-whether-the-shape-is-a-cube.ts" beforeDir="false" afterPath="$PROJECT_DIR$/codewars/Typescript/Find-out-whether-the-shape-is-a-cube.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codewars/Typescript/How-many-stairs-will-Suzuki-climb-in-20-years.ts" beforeDir="false" afterPath="$PROJECT_DIR$/codewars/Typescript/How-many-stairs-will-Suzuki-climb-in-20-years.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codewars/Typescript/Quarter-of-the-year.ts" beforeDir="false" afterPath="$PROJECT_DIR$/codewars/Typescript/Quarter-of-the-year.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-beecrowd.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beecrowd/ad-hoc/beecrowd1547.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/codewars/Typescript/Keep-up-the-hoop.ts" beforeDir="false" afterPath="$PROJECT_DIR$/codewars/Typescript/Keep-up-the-hoop.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +65,7 @@
       <recent name="E:\PROJETOS\Estudo C#\Challenges\TypeScript\Leetcode\30-Days-of-JavaScript" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.Sum-of-Pairs.ts">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="Sum-of-Pairs.ts" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Sum-of-Pairs.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -135,6 +127,8 @@
       <workItem from="1744655234068" duration="621000" />
       <workItem from="1744660095499" duration="51000" />
       <workItem from="1744660166540" duration="1137000" />
+      <workItem from="1744894972740" duration="169000" />
+      <workItem from="1744915646449" duration="3372000" />
     </task>
     <servers />
   </component>
