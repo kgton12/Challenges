@@ -1,15 +1,13 @@
 ﻿namespace BeeCrowd.src.Resolutions.Beginner;
 
-public class Beecrowd1001
+public class Beecrowd1004
 {
-    public static void ExtremelyBasic()
+    public static void SimpleProduct()
     {
         int A = Convert.ToInt32(Console.ReadLine());
         int B = Convert.ToInt32(Console.ReadLine());
 
-        int X = A + B;
-
-        Console.WriteLine($"X = {X}");
+        Console.WriteLine($"PROD = {A * B}");
     }
 
 }

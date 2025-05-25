@@ -1,20 +1,20 @@
 {
-	"name": "typescript",
+	"name": "nova-pasta",
 	"version": "1.0.0",
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
-		"dev": "node index.ts",
-		"format": "npx @biomejs/biome check --write ."
+		"update:deps": "npx npm-check-updates -u && npm install",
+		"format": "npx @biomejs/biome check --write .",
+		"native:TS": "node --env-file=.env index.ts"
 	},
-	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"description": "",
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
-		"@types/node": "^22.10.2",
-		"ts-node": "^10.9.2",
-		"typescript": "^5.7.2"
+		"@types/node": "^22.15.17",
+		"typescript": "^5.8.3",
+		"npm-check-updates": "^18.0.1"
 	}
 }
