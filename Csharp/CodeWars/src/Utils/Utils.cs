@@ -2,9 +2,9 @@
 {
     public class Utils
     {
-        public static void Print(object[] value)
+        public static void PrintArray<T>(T[] array)
         {
-            Console.WriteLine($"[{string.Join(", ", value.ToArray())}]");
+            Console.WriteLine("[" + string.Join(", ", array) + "]");
         }
     }
 }

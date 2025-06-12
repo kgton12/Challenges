@@ -1,11 +1,5 @@
-﻿//Utils.Print(SurfaceAreaAndVolumeOfABox.Get_size(4, 2, 6));  
+﻿//Utils.PrintArray(SortByLastChar.Last("abc cba cab"));
+using CodeWars.src;
 
-
-
-
-using CodeWars.src.Resolutions;
-
-Console.WriteLine(string.Join("-", SimpleRemoveDuplicates.solve([3, 4, 4, 3, 6, 3])));
-
-
+Console.WriteLine(MaximumSubArraySum.MaxSequence([]));
 

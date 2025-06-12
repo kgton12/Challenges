@@ -1,0 +1,6 @@
+﻿namespace CodeWars.src.Resolutions;
+
+public class PickASetOfFirstElements
+{
+    public static object[] TakeFirstElements(object[] array, int n = 1) => [.. array.Take(n)];
+}

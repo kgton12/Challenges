@@ -1,8 +1,15 @@
-﻿namespace BeeCrowd.src;
+﻿using BeeCrowd.src.Resolutions.String;
+
+namespace BeeCrowd.src;
 class Beecrowd
 {
     static void Main(string[] args)
     {
-        Beecrowd1329.HeadsOrTails();
+        Beecrowd1272.HiddenMessage();
+
+
+
+
+
     }
 }
