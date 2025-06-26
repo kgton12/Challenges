@@ -1,0 +1,7 @@
+namespace CodeWars.src.Resolutions;
+
+public static class PartialWordSearching
+{
+    public static string[] WordSearch(string query, string[] seq) =>
+        [.. seq.Where(x => x.Contains(query, StringComparison.OrdinalIgnoreCase)).DefaultIfEmpty("Empty")];
+}
