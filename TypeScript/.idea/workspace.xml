@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d40e9709-2a85-499b-8c0c-3131b4f11d2b" name="Changes" comment="" />
+    <list default="true" id="d40e9709-2a85-499b-8c0c-3131b4f11d2b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Csharp/CodeWars/src/ColorGhost.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Csharp/CodeWars/src/MaximumSubArraySum.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Csharp/CodeWars/src/SuperDuperEasy.cs" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,6 +135,7 @@
       <workItem from="1745764395011" duration="6621000" />
       <workItem from="1745876825240" duration="1712000" />
       <workItem from="1746058046138" duration="735000" />
+      <workItem from="1750972510258" duration="20000" />
     </task>
     <servers />
   </component>

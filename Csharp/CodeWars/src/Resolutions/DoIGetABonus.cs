@@ -1,0 +1,7 @@
+﻿namespace CodeWars.src.Resolutions;
+
+public class DoIGetABonus
+{
+    public static string BonusTime(int salary, bool bonus) =>
+        $"${(bonus ? salary * 10 : salary)}";
+}
