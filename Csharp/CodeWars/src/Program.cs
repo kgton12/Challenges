@@ -1,4 +1,4 @@
-﻿using CodeWars.src.Resolutions;
+﻿using CodeWars.src;
 
-Console.WriteLine(CharCodeCalculation.Calc("abc"));
+Console.WriteLine(SmallestUnusedId.NextId(new int[] { 9, 9, 8 }));
 
