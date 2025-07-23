@@ -2,17 +2,14 @@
 
 public class FactorialClass
 {
-    public static int Factorial(int n)
+    public static ulong Factorial(int N)
     {
-        if (n < 0 || n > 12) throw new ArgumentOutOfRangeException();
-
-        if (n == 0 || n == 1)
+        if (N == 0 || N == 1)
             return 1;
 
-        int factorial = 1;
-
-        for (int i = n; i > 1; i--)
-            factorial *= i;
+        ulong factorial = 1;
+        for (int i = N; i > 1; i--)
+            factorial *= (ulong)i;
 
         return factorial;
     }
