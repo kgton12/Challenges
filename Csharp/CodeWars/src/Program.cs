@@ -1,5 +1,4 @@
-﻿//Utils.PrintArray(SortByLastChar.Last("abc cba cab"));
-using CodeWars.src;
+﻿using CodeWars.src.Resolutions;
 
-Console.WriteLine(MaximumSubArraySum.MaxSequence([]));
+Console.WriteLine(CharCodeCalculation.Calc("abc"));
 
