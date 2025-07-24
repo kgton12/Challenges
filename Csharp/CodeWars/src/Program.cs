@@ -1,6 +1,6 @@
 ﻿using CodeWars.src.Resolutions;
 
-Console.WriteLine(DisariumNumberSpecialNumbersSeries3.DisariumNumber(564));
+Console.WriteLine(ReturnTheClosestNumberMultipleOf10.ClosestMultiple10(30256));
 
 
 //foreach (var item in AveragesOfNumbers.Averages([1, 3, 5, 1, -10]))
