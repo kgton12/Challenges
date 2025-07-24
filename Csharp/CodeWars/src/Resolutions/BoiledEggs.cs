@@ -1,4 +1,4 @@
-﻿namespace CodeWars.src;
+﻿namespace CodeWars.src.Resolutions;
 
 internal class BoiledEggs
 {
