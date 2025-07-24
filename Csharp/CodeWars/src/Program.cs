@@ -1,4 +1,10 @@
-﻿using CodeWars.src.Resolutions;
+﻿using CodeWars.src;
 
-Console.WriteLine(SmallestUnusedId.NextId(new int[] { 9, 9, 8 }));
+Console.WriteLine(DigitsExplosion.Explode("102269"));
+
+
+//foreach (var item in AveragesOfNumbers.Averages([1, 3, 5, 1, -10]))
+//{
+//    Console.WriteLine(item);
+//}
 
