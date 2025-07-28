@@ -1,6 +1,6 @@
 ﻿using CodeWars.src.Resolutions;
 
-Console.WriteLine(ShorterConcatReverseLonger.ShorterReverseLonger("first", "abcde"));
+Console.WriteLine(DotCalculator.Calculator(". // .."));
 
 
 //foreach (var item in AveragesOfNumbers.Averages([1, 3, 5, 1, -10]))
