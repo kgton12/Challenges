@@ -1,6 +1,6 @@
 ﻿using CodeWars.src.Resolutions;
 
-Console.WriteLine(MaxminArrays.Solve(new List<int> { 15, 11, 10, 7, 12 }));
+Console.WriteLine(SpoonerizeMe.Spoonerize("nit picking"));
 
 
 //foreach (var item in AveragesOfNumbers.Averages([1, 3, 5, 1, -10]))
