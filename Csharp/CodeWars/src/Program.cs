@@ -1,9 +1,9 @@
 ﻿using CodeWars.src.Resolutions;
 
-Console.WriteLine(SpoonerizeMe.Spoonerize("nit picking"));
+Console.WriteLine(SimpleFun261WhoseMove.WhoseMove("white", true));
 
 
-//foreach (var item in AveragesOfNumbers.Averages([1, 3, 5, 1, -10]))
+//foreach (var item in TailSwapClass.TailSwap(["abc:123", "cde:456"]))
 //{
 //    Console.WriteLine(item);
 //}
