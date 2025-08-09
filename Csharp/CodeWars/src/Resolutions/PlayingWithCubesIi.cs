@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.src.Resolutions;
 
-public class Cube(int c = 0)
+public class Cube1(int c = 0)
 {
     private int Side = c;
 
