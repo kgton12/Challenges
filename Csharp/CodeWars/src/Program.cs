@@ -1,6 +1,6 @@
-﻿using CodeWars.src.Resolutions;
+﻿using CodeWars.src;
 
-Console.WriteLine(MultiplyWordInString.ModifyMultiply("Talk is cheap Show me the code", 2, 4));
+Console.WriteLine(ConsecutiveLetters.Solve("dabc"));
 
 
 //foreach (var item in TailSwapClass.TailSwap(["abc:123", "cde:456"]))
