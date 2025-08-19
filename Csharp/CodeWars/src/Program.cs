@@ -1,9 +1,11 @@
 ﻿using CodeWars.src.Resolutions;
 
-Console.WriteLine(SumOfABeachClass.SumOfABeach("123FISH321"));
+Console.WriteLine(ExclamationMarksSeries7RemoveWordsFromTheSentenceIfItContainsOneExclamationMark.Remove("!!!Hi !!hi!!! !hi"));
 
 
 //foreach (var item in NameArrayCapping.CapMe(["abc", "CDF"]))
 //{
 //    Console.WriteLine(item);
-//}
+//}]
+
+
