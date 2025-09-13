@@ -1,4 +1,4 @@
-﻿namespace CodeWars.src;
+﻿namespace CodeWars.src.Resolutions;
 
 public class SimpleStringReversalIi
 {
@@ -8,7 +8,7 @@ public class SimpleStringReversalIi
 
         return string.Concat(
             s.Select((ch, i) =>
-                (i >= a && i <= b)
+                i >= a && i <= b
                     ? s[a + b - i]
                     : ch
             )

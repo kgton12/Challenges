@@ -1,6 +1,7 @@
-﻿using CodeWars.src;
+﻿using CodeWars.src.Resolutions;
 
-Console.WriteLine(SimpleStringReversalIi.Solve("codewars", 1, 5));
+Console.WriteLine(ReverseListClass.ReverseList([1, 2, 3]));
+
 
 
 //foreach (var item in NameArrayCapping.CapMe(["abc", "CDF"]))
