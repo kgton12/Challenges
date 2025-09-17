@@ -1,6 +1,6 @@
 ﻿using CodeWars.src.Resolutions;
 
-Console.WriteLine(ReverseListClass.ReverseList([1, 2, 3]));
+Console.WriteLine(TrimmingAString.TrimString("Hey", 3));
 
 
 

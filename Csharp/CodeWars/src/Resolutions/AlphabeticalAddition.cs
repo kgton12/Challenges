@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.src.Resolutions;
 
-internal class AlphabeticalAddition
+public class AlphabeticalAddition
 {
     public static char AddLetters(char[] letters)
     {

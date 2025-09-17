@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.src.Resolutions;
 
-internal class SplitStrings
+public class SplitStrings
 {
     public static string[] Solution(string str)
     {

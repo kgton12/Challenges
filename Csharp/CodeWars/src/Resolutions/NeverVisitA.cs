@@ -1,7 +1,7 @@
 ﻿namespace CodeWars.src.Resolutions;
 
 
-internal class NeverVisitA
+public class NeverVisitA
 {
     private static readonly Dictionary<int, string> fruitDictionary = new()
     {

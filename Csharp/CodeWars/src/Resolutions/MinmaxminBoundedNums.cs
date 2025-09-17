@@ -1,5 +1,3 @@
-using System;
-
 namespace CodeWars.src.Resolutions;
 
 public class MinmaxminBoundedNums

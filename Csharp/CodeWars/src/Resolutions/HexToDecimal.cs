@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.src.Resolutions
 {
-    internal class HexToDecimal
+    public class HexToDecimal
     {
         public static int HexToDec(string hexString)
         {

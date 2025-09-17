@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.src.Resolutions
 {
-    internal class GrasshopperGradeBook
+    public class GrasshopperGradeBook
     {
         public static char GetGrade(int s1, int s2, int s3)
         {
