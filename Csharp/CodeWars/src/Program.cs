@@ -1,6 +1,6 @@
 ﻿using CodeWars.src.Resolutions;
 
-Console.WriteLine(TrimmingAString.TrimString("Hey", 3));
+Console.WriteLine(LeastLargerClass.LeastLarger(new[] { 4, 1, 3, 5, 6 }, 4));
 
 
 
