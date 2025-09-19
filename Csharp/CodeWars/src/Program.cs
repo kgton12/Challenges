@@ -1,6 +1,6 @@
 ﻿using CodeWars.src.Resolutions;
 
-Console.WriteLine(LeastLargerClass.LeastLarger(new[] { 4, 1, 3, 5, 6 }, 4));
+Console.WriteLine(PossibilitiesArray.IsAllPossibilities([1, 2, 3, 4]));
 
 
 
@@ -8,5 +8,4 @@ Console.WriteLine(LeastLargerClass.LeastLarger(new[] { 4, 1, 3, 5, 6 }, 4));
 //{
 //    Console.WriteLine(item);
 //}]
-
 
