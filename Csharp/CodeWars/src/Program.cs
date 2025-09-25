@@ -1,6 +1,6 @@
-﻿using CodeWars.src.Resolutions;
+﻿using CodeWars.src.Incomplete;
 
-Console.WriteLine(PossibilitiesArray.IsAllPossibilities([1, 2, 3, 4]));
+Console.WriteLine(HistogramV1.Histogram(new int[] { 9, 5, 10, 8, 5, 13 }));
 
 
 
