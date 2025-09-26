@@ -1,6 +1,6 @@
-﻿using CodeWars.src.Incomplete;
+﻿using CodeWars.src.Resolutions;
 
-Console.WriteLine(HistogramV1.Histogram(new int[] { 9, 5, 10, 8, 5, 13 }));
+Console.WriteLine(SortAnArrayByValueAndIndex.SortByValueAndIndex([23, 2, 3, 4, 5]));
 
 
 
