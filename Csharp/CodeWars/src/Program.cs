@@ -1,6 +1,6 @@
 ﻿using CodeWars.src.Resolutions;
 
-Console.WriteLine(SortAnArrayByValueAndIndex.SortByValueAndIndex([23, 2, 3, 4, 5]));
+Console.WriteLine(FromAToZ.GimmeTheLetters("A-Z"));
 
 
 
