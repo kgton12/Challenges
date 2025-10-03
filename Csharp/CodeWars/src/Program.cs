@@ -1,6 +1,6 @@
 ﻿using CodeWars.src.Resolutions;
 
-Console.WriteLine(FromAToZ.GimmeTheLetters("A-Z"));
+Console.WriteLine(Ch4113ng3.Nerdify("Los Angeles"));
 
 
 
