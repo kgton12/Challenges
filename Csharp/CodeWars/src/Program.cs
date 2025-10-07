@@ -1,11 +1,10 @@
 ﻿using CodeWars.src.Resolutions;
 
-Console.WriteLine(Ch4113ng3.Nerdify("Los Angeles"));
+FindArrayClass.FindArray(new object[] { 'a', 'a', 'a', 'a', 'a' }, new int[] { 10 })
+    .ToList()
+    .ForEach(Console.WriteLine);
 
 
 
-//foreach (var item in NameArrayCapping.CapMe(["abc", "CDF"]))
-//{
-//    Console.WriteLine(item);
-//}]
+
 
