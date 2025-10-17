@@ -2,8 +2,6 @@
 
 public class SimpleRemoveDuplicates
 {
-    public static int[] solve(int[] arr)
-    {
-        return arr.Reverse().Distinct().Reverse().ToArray();
-    }
+    public static int[] Solve(int[] arr) =>
+        [.. arr.Reverse().Distinct().Reverse()];
 }

@@ -1,4 +1,8 @@
 ﻿using CodeWars.src.Resolutions;
 
-Console.WriteLine(AlindromeChainLength.PalindromeChainLength(87));
+string[][] a = { new[] { "foo", "foo@foo.com" }, new[] { "bar_", "bar@bar.com" } };
+
+Console.WriteLine(AvascriptFilter1.SearchNames(a));
+
+
 

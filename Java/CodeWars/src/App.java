@@ -1,9 +1,9 @@
-import Completed.RemoveFirstAndLastCharacterClass;
+import Completed.RemoveStringSpacesClass;
 
 public class App {
     public static void main(String[] args) throws Exception {
 
-        System.out.println(RemoveFirstAndLastCharacterClass.remove("ab"));
+        System.out.println(RemoveStringSpacesClass.noSpace("a b c"));
 
     }
 }
