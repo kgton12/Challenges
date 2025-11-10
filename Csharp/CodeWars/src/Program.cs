@@ -1,3 +1,6 @@
 ﻿using CodeWars.src.Resolutions;
 
-CompleteSeriesClass.CompleteSeries([3, 4, 5]).ToList().ForEach(Console.WriteLine);
+YouGotChange
+    .GiveChange(217)
+    .ToList()
+    .ForEach(Console.WriteLine);
