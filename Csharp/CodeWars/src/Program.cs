@@ -1,6 +1,3 @@
 ﻿using CodeWars.src.Resolutions;
 
-YouGotChange
-    .GiveChange(217)
-    .ToList()
-    .ForEach(Console.WriteLine);
+Console.WriteLine(CompleteThePattern4.Pattern(4));
