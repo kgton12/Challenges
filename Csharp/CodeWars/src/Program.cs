@@ -1,10 +1,17 @@
-﻿using CodeWars.src.Model;
-using CodeWars.src.Resolutions;
+﻿using CodeWars.src;
+using CodeWars.src.Model;
 
 
 Metrics metrics = new();
 metrics.Start();
 
-Console.WriteLine(SimpleFun136MissingValues.MissingValues([1, 1, 1, 2, 2, 3]));
+foreach (var item in DigitalCypher.Encode("masterpiece", 1939))
+{
+    Console.WriteLine(item);
+}
+
+
+
+
 
 metrics.Stop();
