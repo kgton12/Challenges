@@ -2,7 +2,7 @@
 
 public class Plus1Array
 {
-    public static int[] UpArray(int[] num)
+    public static int[]? UpArray(int[] num)
     {
         if (num == null || num.Length == 0 || num.Any(d => d < 0 || d > 9))
             return null;

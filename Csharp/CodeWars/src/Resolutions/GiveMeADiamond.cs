@@ -4,7 +4,7 @@ namespace CodeWars.src.Resolutions;
 
 public class GiveMeADiamond
 {
-    public static string Print(int n)
+    public static string? Print(int n)
     {
         if (n % 2 == 0 || n < 1) return null;
 
