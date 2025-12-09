@@ -10,7 +10,7 @@ metrics.Start();
 //    Console.WriteLine(item);
 //}
 
-Console.WriteLine(GeometricProgressionSequence.GeometricSequenceElements(2, 3, 500));
+Console.WriteLine(Noobcode03CheckTheseLettersSeeIfLettersInString2ArePresentInString1.LetterCheck(["assert", "staring"]));
 
 
 
