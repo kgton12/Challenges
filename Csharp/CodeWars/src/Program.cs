@@ -1,5 +1,5 @@
-﻿using CodeWars.src.Model;
-using CodeWars.src.Resolutions;
+﻿using CodeWars.src;
+using CodeWars.src.Model;
 
 
 Metrics metrics = new();
@@ -10,7 +10,7 @@ metrics.Start();
 //    Console.WriteLine(item);
 //}
 
-Console.WriteLine(New5NotesCollectors.GetNewNotes(2001, new int[] { 500, 160, 400 }));
+Console.WriteLine(AllOrNothing.PossiblyPerfect(["B", "_", "B"], ["B", "D", "C"]));
 
 
 
