@@ -10,7 +10,7 @@ metrics.Start();
 //    Console.WriteLine(item);
 //}
 
-Console.WriteLine(AllOrNothing.PossiblyPerfect(["B", "_", "B"], ["B", "D", "C"]));
+Console.WriteLine(ZerobalancedArray.IsZeroBalanced(new List<int> { }));
 
 
 
