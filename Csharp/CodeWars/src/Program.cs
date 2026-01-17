@@ -1,5 +1,5 @@
-﻿using CodeWars.src;
-using CodeWars.src.Model;
+﻿using CodeWars.src.Model;
+using CodeWars.src.Resolutions;
 
 
 Metrics metrics = new();
