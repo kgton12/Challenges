@@ -10,7 +10,10 @@ metrics.Start();
 //    Console.WriteLine(item);
 //}
 
-Console.WriteLine(ZerobalancedArray.IsZeroBalanced(new List<int> { }));
+Console.WriteLine(CommonSubstrings.SubstringTest("vAuopRimjxVsPacbQbOAsmsWOFFN", "sesdxsDkbzWhlAtTkGCxbWFnajGF"));
+
+//string t = "1234";
+//Console.WriteLine(t[1..3]);
 
 
 
