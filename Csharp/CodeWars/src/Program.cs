@@ -10,11 +10,9 @@ metrics.Start();
 //    Console.WriteLine(item);
 //}
 
-Console.WriteLine(CommonSubstrings.SubstringTest("vAuopRimjxVsPacbQbOAsmsWOFFN", "sesdxsDkbzWhlAtTkGCxbWFnajGF"));
+Console.WriteLine(WeirdWords.NextLetter("My Name Is Zoo"));
 
-//string t = "1234";
-//Console.WriteLine(t[1..3]);
-
+Console.ReadKey();
 
 
 metrics.Stop();
