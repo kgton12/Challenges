@@ -5,12 +5,12 @@ using CodeWars.src.Resolutions;
 Metrics metrics = new();
 metrics.Start();
 
-//foreach (var item in AscWeek1Challenge5Medium2.AvgArray(new double[][] { new double[] { 1, 2, 3, 4 }, new double[] { 5, 6, 7, 8 } }))
+//foreach (var item in StringBasics.GetUserIds("multipleuid"))
 //{
 //    Console.WriteLine(item);
 //}
 
-Console.WriteLine(WeirdWords.NextLetter("My Name Is Zoo"));
+Console.WriteLine(FindTheCombination.CountCombinations("abeeeeabab", "ab"));
 
 Console.ReadKey();
 
