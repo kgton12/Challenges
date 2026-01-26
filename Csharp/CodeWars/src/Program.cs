@@ -10,7 +10,7 @@ metrics.Start();
 //    Console.WriteLine(item);
 //}
 
-Console.WriteLine(FindTheCombination.CountCombinations("abeeeeabab", "ab"));
+Console.WriteLine(InvalidInputErrorHandling1.GetCount("Aa"));
 
 Console.ReadKey();
 
