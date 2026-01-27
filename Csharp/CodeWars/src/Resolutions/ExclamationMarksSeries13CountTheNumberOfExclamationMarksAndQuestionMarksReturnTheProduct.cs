@@ -1,4 +1,4 @@
-﻿namespace CodeWars.src;
+﻿namespace CodeWars.Resolutions;
 
 public class ExclamationMarksSeries13CountTheNumberOfExclamationMarksAndQuestionMarksReturnTheProduct
 {

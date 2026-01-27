@@ -1,4 +1,4 @@
-﻿namespace CodeWars.src.Resolutions;
+﻿namespace CodeWars.Resolutions;
 
 public class By3OrNotBy3ThatIsTheQuestion
 {

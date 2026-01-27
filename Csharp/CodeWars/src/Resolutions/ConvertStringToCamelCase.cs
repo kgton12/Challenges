@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace CodeWars.src.Resolutions;
+namespace CodeWars.Resolutions;
 
 public class ConvertStringToCamelCase
 {

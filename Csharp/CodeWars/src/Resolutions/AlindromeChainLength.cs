@@ -1,4 +1,4 @@
-﻿namespace CodeWars.src.Resolutions;
+﻿namespace CodeWars.Resolutions;
 
 internal class AlindromeChainLength
 {

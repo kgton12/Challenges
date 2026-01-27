@@ -1,6 +1,6 @@
-﻿namespace CodeWars.src.Resolutions;
+﻿namespace CodeWars.Resolutions;
 
-public class NumberofDecimalDigits
+public static class NumberofDecimalDigits
 {
     public static int Digits(ulong n)
     {

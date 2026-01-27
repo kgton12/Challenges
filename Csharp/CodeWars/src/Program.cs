@@ -1,6 +1,5 @@
-﻿using CodeWars.src.Model;
-using CodeWars.src.Resolutions;
-
+﻿using CodeWars.Resolutions;
+using CodeWars.Service;
 
 Metrics metrics = new();
 metrics.Start();
@@ -13,6 +12,5 @@ metrics.Start();
 Console.WriteLine(InvalidInputErrorHandling1.GetCount("Aa"));
 
 Console.ReadKey();
-
 
 metrics.Stop();

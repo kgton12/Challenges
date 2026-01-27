@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace CodeWars.src.Resolutions;
+namespace CodeWars.Resolutions;
 
 public class GaderypolukiCypher
 {

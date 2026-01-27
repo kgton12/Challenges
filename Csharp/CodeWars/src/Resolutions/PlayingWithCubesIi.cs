@@ -1,4 +1,4 @@
-﻿namespace CodeWars.src.Resolutions;
+﻿namespace CodeWars.Resolutions;
 
 public class Cube1(int c = 0)
 {

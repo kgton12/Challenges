@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace CodeWars.src.Model;
+namespace CodeWars.Service;
 
 public class Metrics
 {

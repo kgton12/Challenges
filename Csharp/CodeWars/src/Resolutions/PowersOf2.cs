@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 
-namespace CodeWars.src.Resolutions;
+namespace CodeWars.Resolutions;
 
 public class PowersOf2
 {

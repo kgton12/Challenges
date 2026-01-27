@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace CodeWars.src.Incomplete;
+namespace CodeWars.Incomplete;
 
 public class HistogramV1
 {
