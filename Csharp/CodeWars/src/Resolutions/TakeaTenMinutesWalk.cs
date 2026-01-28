@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class TakeaTenMinutesWalk
+public static class TakeaTenMinutesWalk
 {
     public static bool IsValidWalk(string[] walk)
     {

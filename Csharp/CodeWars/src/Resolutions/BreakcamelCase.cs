@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class BreakcamelCase
+public static class BreakcamelCase
 {
     public static string BreakCamelCase(string str) => string.Concat(str.Select(x => char.IsUpper(x) ? " " + x : x.ToString()));
 

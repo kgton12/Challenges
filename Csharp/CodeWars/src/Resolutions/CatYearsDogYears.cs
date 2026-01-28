@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class CatYearsDogYears
+public static class CatYearsDogYears
 {
     public static int[] HumanYearsCatYearsDogYears(int humanYears)
     {

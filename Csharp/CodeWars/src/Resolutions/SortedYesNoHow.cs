@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class SortedYesNoHow
+public static class SortedYesNoHow
 {
     public static string IsSortedAndHow(int[] array)
     {

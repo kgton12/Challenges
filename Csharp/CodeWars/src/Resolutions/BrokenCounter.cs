@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class Counter
+public class BrokenCounter
 {
     private int _value = 0;
 

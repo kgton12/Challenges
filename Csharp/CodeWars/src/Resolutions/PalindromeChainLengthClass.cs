@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-internal class AlindromeChainLength
+public static class PalindromeChainLengthClass
 {
     public static int PalindromeChainLength(int n)
     {

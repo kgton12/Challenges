@@ -4,12 +4,12 @@ using CodeWars.Service;
 Metrics metrics = new();
 metrics.Start();
 
-//foreach (var item in StringBasics.GetUserIds("multipleuid"))
-//{
-//    Console.WriteLine(item);
-//}
+foreach (var item in FilterOutTheGeese.GooseFilter(new string[] { "Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish" }))
+{
+    Console.WriteLine(item);
+}
 
-Console.WriteLine(InvalidInputErrorHandling1.GetCount("Aa"));
+//Console.WriteLine(FilterOutTheGeese.GooseFilter(new string[] { "Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish" }));
 
 Console.ReadKey();
 

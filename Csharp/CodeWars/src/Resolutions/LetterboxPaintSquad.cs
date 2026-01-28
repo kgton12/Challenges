@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class LetterboxPaintSquad
+public static class LetterboxPaintSquad
 {
     public static IEnumerable<int> PaintLetterBoxes(int start, int end)
     {

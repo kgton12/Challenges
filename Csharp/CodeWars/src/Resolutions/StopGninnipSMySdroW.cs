@@ -1,6 +1,6 @@
 namespace CodeWars.Resolutions;
 
-public class StopGninnipSMySdroW
+public static class StopGninnipSMySdroW
 {
     public static string SpinWords(string sentence) =>
         string.Join(" ", sentence.Split(' ').Select(ReverseWord));

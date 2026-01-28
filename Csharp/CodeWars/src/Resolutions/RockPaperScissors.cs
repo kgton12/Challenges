@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class RockPaperScissors
+public static class RockPaperScissors
 {
     private static readonly Dictionary<string, (string win, string lose)> GAME = new()
     {

@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class AscWeek1Challenge5Medium2
+public static class AverageArray
 {
     public static double[] AvgArray(double[][] arr)
     {

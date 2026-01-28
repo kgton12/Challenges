@@ -3,5 +3,5 @@
 public class PluralClass
 {
     public static bool Plural(double n) =>
-        !(n != 1);
+        (n != 1);
 }
