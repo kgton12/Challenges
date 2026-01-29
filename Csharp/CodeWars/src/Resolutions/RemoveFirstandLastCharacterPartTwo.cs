@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class RemoveFirstandLastCharacterPartTwo
+public static class RemoveFirstandLastCharacterPartTwo
 {
     public static string? Array(string s)
     {

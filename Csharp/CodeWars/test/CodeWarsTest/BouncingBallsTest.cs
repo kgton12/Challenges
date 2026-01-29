@@ -1,0 +1,18 @@
+﻿using CodeWars.Resolutions;
+
+namespace CodeWarsTest;
+
+public class BouncingBallsTest
+{
+    [Test, Order(1)]
+    public void Test1()
+    {
+        Assert.That(BouncingBalls.BouncingBall(3.0, 0.66, 1.5), Is.EqualTo(3));
+    }
+
+    [Test, Order(2)]
+    public void Test2()
+    {
+        Assert.That(BouncingBalls.BouncingBall(30.0, 0.66, 1.5), Is.EqualTo(15));
+    }
+}

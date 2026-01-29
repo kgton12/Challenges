@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class MaximumSubArraySum
+public static class MaximumSubArraySum
 {
     public static int MaxSequence(int[] arr)
     {

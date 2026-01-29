@@ -1,17 +1,10 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class BuildingBlocks
+public class BuildingBlocks(int[] args)
 {
-    private int Width { get; set; }
-    private int Length { get; set; }
-    private int Height { get; set; }
-
-    public BuildingBlocks(int[] args)
-    {
-        Width = args[0];
-        Length = args[1];
-        Height = args[2];
-    }
+    private int Width { get; set; } = args[0];
+    private int Length { get; set; } = args[1];
+    private int Height { get; set; } = args[2];
 
     public int GetWidth() => Width;
 

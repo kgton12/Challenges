@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class ConvertNumberToReversedArrayOfDigits
+public static class ConvertNumberToReversedArrayOfDigits
 {
     public static long[] Digitize(long n) =>
         [.. n.ToString()

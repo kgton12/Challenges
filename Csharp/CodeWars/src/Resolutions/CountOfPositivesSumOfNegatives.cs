@@ -2,7 +2,7 @@
 
 public class CountOfPositivesSumOfNegatives
 {
-    public static int[] CountPositivesSumNegatives(int[] input)
+    public static int[] CountPositivesSumNegatives(int[]? input)
     {
         if (input == null || input.Length == 0) return [];
 

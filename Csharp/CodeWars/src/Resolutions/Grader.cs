@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class GraderClass
+public static class GraderClass
 {
     public static char Grader(double score)
     {
