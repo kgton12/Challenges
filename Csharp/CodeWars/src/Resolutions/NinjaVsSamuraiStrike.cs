@@ -6,7 +6,7 @@ public class NinjaVsSamuraiStrike(string name)
 
     public int Health { get; set; } = 100;
 
-    public static void Strike(NinjaVsSamuraiStrike enemy, int swings)
+    public void Strike(NinjaVsSamuraiStrike enemy, int swings)
     {
         enemy.Health = Math.Max(0, enemy.Health - (swings * 10));
     }
