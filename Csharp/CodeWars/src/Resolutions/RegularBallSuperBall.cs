@@ -1,12 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class Ball
+public class Ball(string ballType = "regular")
 {
-    public string ballType { get; set; }
-
-    public Ball(string ballType = "regular")
-    {
-        this.ballType = ballType;
-    }
+    public string BallType { get; set; } = ballType;
 }
-

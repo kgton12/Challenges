@@ -2,7 +2,7 @@
 
 namespace CodeWars.Resolutions;
 
-public class SimpleFun176ReverseLetter
+public static class SimpleFun176ReverseLetter
 {
     public static string ReverseLetter(string str)
     {

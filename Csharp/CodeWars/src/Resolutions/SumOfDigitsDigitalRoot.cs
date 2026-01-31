@@ -1,6 +1,6 @@
 namespace CodeWars.Resolutions;
 
-public class SumOfDigitsDigitalRoot
+public static class SumOfDigitsDigitalRoot
 {
     public static int DigitalRoot(long n)
     {

@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class SumofOddCubedNumbers
+public static class SumofOddCubedNumbers
 {
     public static int CubeOdd(int[] arr)
     {

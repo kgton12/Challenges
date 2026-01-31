@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class MexicanWave
+public static class MexicanWave
 {
     public static List<string> Wave(string str)
     {
