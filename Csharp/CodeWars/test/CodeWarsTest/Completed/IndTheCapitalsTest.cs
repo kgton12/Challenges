@@ -7,7 +7,7 @@ public class IndTheCapitalsTest
     [Test, Order(1)]
     public void CodEWaRs()
     {
-        Assert.That(FindTheCapitals.Capitals("CodEWaRs"), Is.EqualTo(new int[] { 0, 3, 4, 6 }), "Input: \"CodEWaRs\"");
+        Assert.That(FindTheCapitals.Capitals("CodEWaRs"), Is.EqualTo([0, 3, 4, 6]), "Input: \"CodEWaRs\"");
     }
 
     [Test, Order(2)]
@@ -19,12 +19,12 @@ public class IndTheCapitalsTest
     [Test, Order(3)]
     public void AllCapitals()
     {
-        Assert.That(FindTheCapitals.Capitals("AAA"), Is.EqualTo(new int[] { 0, 1, 2 }), "Input: \"AAA\"");
+        Assert.That(FindTheCapitals.Capitals("AAA"), Is.EqualTo([0, 1, 2]), "Input: \"AAA\"");
     }
 
     [Test, Order(4)]
     public void aAbB()
     {
-        Assert.That(FindTheCapitals.Capitals("aAbB"), Is.EqualTo(new int[] { 1, 3 }), "Input: \"aAbB\"");
+        Assert.That(FindTheCapitals.Capitals("aAbB"), Is.EqualTo([1, 3]), "Input: \"aAbB\"");
     }
 }

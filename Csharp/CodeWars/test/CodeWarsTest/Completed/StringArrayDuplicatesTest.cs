@@ -9,9 +9,9 @@ public class StringArrayDuplicatesTest
     {
         using (Assert.EnterMultipleScope())
         {
-            Assert.That(StringArrayDuplicates.Dup(new String[] { "ccooddddddewwwaaaaarrrrsssss", "piccaninny", "hubbubbubboo" }), Is.EqualTo(new String[] { "codewars", "picaniny", "hubububo" }));
-            Assert.That(StringArrayDuplicates.Dup(new String[] { "abracadabra", "allottee", "assessee" }), Is.EqualTo(new String[] { "abracadabra", "alote", "asese" }));
-            Assert.That(StringArrayDuplicates.Dup(new String[] { "kelless", "keenness" }), Is.EqualTo(new String[] { "keles", "kenes" }));
+            Assert.That(StringArrayDuplicates.Dup(["ccooddddddewwwaaaaarrrrsssss", "piccaninny", "hubbubbubboo"]), Is.EqualTo(["codewars", "picaniny", "hubububo"]));
+            Assert.That(StringArrayDuplicates.Dup(["abracadabra", "allottee", "assessee"]), Is.EqualTo(["abracadabra", "alote", "asese"]));
+            Assert.That(StringArrayDuplicates.Dup(["kelless", "keenness"]), Is.EqualTo(["keles", "kenes"]));
         }
     }
 }

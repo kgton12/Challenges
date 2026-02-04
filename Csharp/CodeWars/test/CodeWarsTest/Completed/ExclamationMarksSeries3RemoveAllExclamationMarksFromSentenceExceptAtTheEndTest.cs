@@ -7,11 +7,14 @@ public class ExclamationMarksSeries3RemoveAllExclamationMarksFromSentenceExceptA
     [Test, Description("It should work for basic tests")]
     public void SampleTest()
     {
-        Assert.That(ExclamationMarksSeries3RemoveAllExclamationMarksFromSentenceExceptAtTheEnd.Remove("Hi!"), Is.EqualTo("Hi!"));
-        Assert.That(ExclamationMarksSeries3RemoveAllExclamationMarksFromSentenceExceptAtTheEnd.Remove("Hi!!!"), Is.EqualTo("Hi!!!"));
-        Assert.That(ExclamationMarksSeries3RemoveAllExclamationMarksFromSentenceExceptAtTheEnd.Remove("!Hi"), Is.EqualTo("Hi"));
-        Assert.That(ExclamationMarksSeries3RemoveAllExclamationMarksFromSentenceExceptAtTheEnd.Remove("!Hi!"), Is.EqualTo("Hi!"));
-        Assert.That(ExclamationMarksSeries3RemoveAllExclamationMarksFromSentenceExceptAtTheEnd.Remove("Hi! Hi!"), Is.EqualTo("Hi Hi!"));
-        Assert.That(ExclamationMarksSeries3RemoveAllExclamationMarksFromSentenceExceptAtTheEnd.Remove("Hi"), Is.EqualTo("Hi"));
+        using (Assert.EnterMultipleScope())
+        {
+            Assert.That(ExclamationMarksSeries3RemoveAllExclamationMarksFromSentenceExceptAtTheEnd.Remove("Hi!"), Is.EqualTo("Hi!"));
+            Assert.That(ExclamationMarksSeries3RemoveAllExclamationMarksFromSentenceExceptAtTheEnd.Remove("Hi!!!"), Is.EqualTo("Hi!!!"));
+            Assert.That(ExclamationMarksSeries3RemoveAllExclamationMarksFromSentenceExceptAtTheEnd.Remove("!Hi"), Is.EqualTo("Hi"));
+            Assert.That(ExclamationMarksSeries3RemoveAllExclamationMarksFromSentenceExceptAtTheEnd.Remove("!Hi!"), Is.EqualTo("Hi!"));
+            Assert.That(ExclamationMarksSeries3RemoveAllExclamationMarksFromSentenceExceptAtTheEnd.Remove("Hi! Hi!"), Is.EqualTo("Hi Hi!"));
+            Assert.That(ExclamationMarksSeries3RemoveAllExclamationMarksFromSentenceExceptAtTheEnd.Remove("Hi"), Is.EqualTo("Hi"));
+        }
     }
 }

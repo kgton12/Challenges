@@ -9,8 +9,11 @@ public class ThinkfulObjectDrillsQuarksTest
     {
         Quark q1 = new Quark("red", "up");
         Quark q2 = new Quark("blue", "strange");
-        Assert.That(q1.Color, Is.EqualTo("red"));
-        Assert.That(q2.Flavor, Is.EqualTo("strange"));
+        using (Assert.EnterMultipleScope())
+        {
+            Assert.That(q1.Color, Is.EqualTo("red"));
+            Assert.That(q2.Flavor, Is.EqualTo("strange"));
+        }
         double expectedBaryonNumber = 1 / 3d;
         Assert.That(q2.BaryonNumber, Is.EqualTo(expectedBaryonNumber));
 

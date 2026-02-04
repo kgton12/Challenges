@@ -9,8 +9,8 @@ public class PossibilitiesArrayTest
     {
         using (Assert.EnterMultipleScope())
         {
-            Assert.That(PossibilitiesArray.IsAllPossibilities(new int[] { 0, 1, 2, 3 }), Is.True);
-            Assert.That(PossibilitiesArray.IsAllPossibilities(new int[] { 1, 2, 3, 4 }), Is.False);
+            Assert.That(PossibilitiesArray.IsAllPossibilities([0, 1, 2, 3]), Is.True);
+            Assert.That(PossibilitiesArray.IsAllPossibilities([1, 2, 3, 4]), Is.False);
         }
     }
 }

@@ -8,14 +8,14 @@ public class CurryingFunctionsMultiplyAllElementsInAnArrayTest
     [Order(1)]
     public void ArrayTest()
     {
-        Assert.That(CurryingFunctionsMultiplyAllElementsInAnArray.MultiplyAll(new int[] { 1 })(1).GetType().IsArray, Is.True);
+        Assert.That(CurryingFunctionsMultiplyAllElementsInAnArray.MultiplyAll([1])(1).GetType().IsArray, Is.True);
     }
 
     [Test, Description("array has correct length")]
     [Order(2)]
     public void LengthTest()
     {
-        Assert.That(CurryingFunctionsMultiplyAllElementsInAnArray.MultiplyAll(new int[] { 1, 2 })(1).Length, Is.EqualTo(2));
+        Assert.That(CurryingFunctionsMultiplyAllElementsInAnArray.MultiplyAll([1, 2])(1).Length, Is.EqualTo(2));
     }
 
     [Test, Description("returned array has correct values")]
@@ -24,10 +24,10 @@ public class CurryingFunctionsMultiplyAllElementsInAnArrayTest
     {
         using (Assert.EnterMultipleScope())
         {
-            Assert.That(CurryingFunctionsMultiplyAllElementsInAnArray.MultiplyAll(new int[] { 1, 2, 3 })(1), Is.EqualTo(new int[] { 1, 2, 3 }));
-            Assert.That(CurryingFunctionsMultiplyAllElementsInAnArray.MultiplyAll(new int[] { 1, 2, 3 })(2), Is.EqualTo(new int[] { 2, 4, 6 }));
-            Assert.That(CurryingFunctionsMultiplyAllElementsInAnArray.MultiplyAll(new int[] { 1, 2, 3 })(0), Is.EqualTo(new int[] { 0, 0, 0 }));
-            Assert.That(CurryingFunctionsMultiplyAllElementsInAnArray.MultiplyAll(new int[] { })(10), Is.EqualTo(new int[] { }), "should return an empty array");
+            Assert.That(CurryingFunctionsMultiplyAllElementsInAnArray.MultiplyAll([1, 2, 3])(1), Is.EqualTo([1, 2, 3]));
+            Assert.That(CurryingFunctionsMultiplyAllElementsInAnArray.MultiplyAll([1, 2, 3])(2), Is.EqualTo([2, 4, 6]));
+            Assert.That(CurryingFunctionsMultiplyAllElementsInAnArray.MultiplyAll([1, 2, 3])(0), Is.EqualTo([0, 0, 0]));
+            Assert.That(CurryingFunctionsMultiplyAllElementsInAnArray.MultiplyAll([])(10), Is.EqualTo(new int[] { }), "should return an empty array");
         }
     }
 }

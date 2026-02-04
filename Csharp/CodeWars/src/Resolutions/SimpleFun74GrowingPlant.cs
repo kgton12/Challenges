@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class SimpleFun74GrowingPlant
+public static class SimpleFun74GrowingPlant
 {
     public static int GrowingPlant(int UpSpeed, int DownSpeed, int DesiredHeight)
     {

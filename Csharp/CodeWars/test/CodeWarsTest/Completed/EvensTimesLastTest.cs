@@ -13,13 +13,13 @@ public class EvensTimesLastTest
     [Test, Order(2)]
     public void ArrayWithOneElementTest()
     {
-        Assert.That(EvensTimesLast.EvenTimesLast(new[] { 7 }), Is.EqualTo(49));
+        Assert.That(EvensTimesLast.EvenTimesLast([7]), Is.EqualTo(49));
     }
 
     [Test, Order(3)]
     public void ArrayWithTwoElementsTest()
     {
-        Assert.That(EvensTimesLast.EvenTimesLast(new[] { 7, 13 }), Is.EqualTo(91));
+        Assert.That(EvensTimesLast.EvenTimesLast([7, 13]), Is.EqualTo(91));
     }
 
     [Test, Order(4)]
@@ -27,9 +27,9 @@ public class EvensTimesLastTest
     {
         using (Assert.EnterMultipleScope())
         {
-            Assert.That(EvensTimesLast.EvenTimesLast(new int[] { 2, 3, 4, 5 }), Is.EqualTo(30));
-            Assert.That(EvensTimesLast.EvenTimesLast(new int[] { 2, 3, 4, 5, 0 }), Is.Zero);
-            Assert.That(EvensTimesLast.EvenTimesLast(new int[] { 2, 3, 4, -1 }), Is.EqualTo(-6));
+            Assert.That(EvensTimesLast.EvenTimesLast([2, 3, 4, 5]), Is.EqualTo(30));
+            Assert.That(EvensTimesLast.EvenTimesLast([2, 3, 4, 5, 0]), Is.Zero);
+            Assert.That(EvensTimesLast.EvenTimesLast([2, 3, 4, -1]), Is.EqualTo(-6));
         }
     }
 }

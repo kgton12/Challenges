@@ -7,8 +7,11 @@ public class SimpleFun261WhoseMoveTest
     [Test]
     public void FixedTests()
     {
-        Assert.That(SimpleFun261WhoseMove.WhoseMove("black", false), Is.EqualTo("white"));
-        Assert.That(SimpleFun261WhoseMove.WhoseMove("white", true), Is.EqualTo("white"));
-        Assert.That(SimpleFun261WhoseMove.WhoseMove("white", false), Is.EqualTo("black"));
+        using (Assert.EnterMultipleScope())
+        {
+            Assert.That(SimpleFun261WhoseMove.WhoseMove("black", false), Is.EqualTo("white"));
+            Assert.That(SimpleFun261WhoseMove.WhoseMove("white", true), Is.EqualTo("white"));
+            Assert.That(SimpleFun261WhoseMove.WhoseMove("white", false), Is.EqualTo("black"));
+        }
     }
 }

@@ -47,10 +47,13 @@ public class FindTheMissingNumberTest
             80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99
         }; // 100
 
-        Assert.That(FindTheMissingNumber.MissingNo(arr1), Is.EqualTo(26));
-        Assert.That(FindTheMissingNumber.MissingNo(arr2), Is.EqualTo(40));
-        Assert.That(FindTheMissingNumber.MissingNo(arr3), Is.EqualTo(80));
-        Assert.That(FindTheMissingNumber.MissingNo(arr4), Is.Zero);
-        Assert.That(FindTheMissingNumber.MissingNo(arr5), Is.EqualTo(100));
+        using (Assert.EnterMultipleScope())
+        {
+            Assert.That(FindTheMissingNumber.MissingNo(arr1), Is.EqualTo(26));
+            Assert.That(FindTheMissingNumber.MissingNo(arr2), Is.EqualTo(40));
+            Assert.That(FindTheMissingNumber.MissingNo(arr3), Is.EqualTo(80));
+            Assert.That(FindTheMissingNumber.MissingNo(arr4), Is.Zero);
+            Assert.That(FindTheMissingNumber.MissingNo(arr5), Is.EqualTo(100));
+        }
     }
 }

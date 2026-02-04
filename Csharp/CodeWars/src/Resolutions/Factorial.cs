@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class FactorialClass
+public static class FactorialClass
 {
     public static ulong Factorial(int N)
     {

@@ -9,8 +9,8 @@ public class SumOfOddCubedNumbersTest
     {
         using (Assert.EnterMultipleScope())
         {
-            Assert.That(SumofOddCubedNumbers.CubeOdd(new int[] { 1, 2, 3, 4 }), Is.EqualTo(28));
-            Assert.That(SumofOddCubedNumbers.CubeOdd(new int[] { -3, -2, 2, 3 }), Is.Zero);
+            Assert.That(SumofOddCubedNumbers.CubeOdd([1, 2, 3, 4]), Is.EqualTo(28));
+            Assert.That(SumofOddCubedNumbers.CubeOdd([-3, -2, 2, 3]), Is.Zero);
         }
     }
 }

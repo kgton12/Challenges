@@ -7,9 +7,9 @@ public class PairsOfIntegersFromMToNTest
     [Test]
     public void ExampleTests()
     {
-        Act(2, 4, new[] { (2, 2), (2, 3), (2, 4), (3, 3), (3, 4), (4, 4) });
-        Act(0, 1, new[] { (0, 0), (0, 1), (1, 1) });
-        Act(0, 0, new[] { (0, 0) });
+        Act(2, 4, [(2, 2), (2, 3), (2, 4), (3, 3), (3, 4), (4, 4)]);
+        Act(0, 1, [(0, 0), (0, 1), (1, 1)]);
+        Act(0, 0, [(0, 0)]);
     }
 
     private static void Act(int m, int n, (int, int)[] expected)

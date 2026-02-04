@@ -9,8 +9,8 @@ public class NiceArrayTest
     {
         using (Assert.EnterMultipleScope())
         {
-            Assert.That(NiceArray.IsNice(new int[] { 2, 10, 9, 3 }), Is.True);
-            Assert.That(NiceArray.IsNice(new int[] { 3, 4, 5, 7 }), Is.False);
+            Assert.That(NiceArray.IsNice([2, 10, 9, 3]), Is.True);
+            Assert.That(NiceArray.IsNice([3, 4, 5, 7]), Is.False);
         }
     }
 }

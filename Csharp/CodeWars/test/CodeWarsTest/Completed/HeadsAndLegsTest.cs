@@ -9,12 +9,12 @@ public class HeadsAndLegsTest
     {
         using (Assert.EnterMultipleScope())
         {
-            Assert.That(HeadsAndLegs.Animals(72, 200), Is.EqualTo(new int[] { 44, 28 }));
-            Assert.That(HeadsAndLegs.Animals(116, 282), Is.EqualTo(new int[] { 91, 25 }));
-            Assert.That(HeadsAndLegs.Animals(12, 24), Is.EqualTo(new int[] { 12, 0 }));
-            Assert.That(HeadsAndLegs.Animals(6, 24), Is.EqualTo(new int[] { 0, 6 }));
-            Assert.That(HeadsAndLegs.Animals(344, 872), Is.EqualTo(new int[] { 252, 92 }));
-            Assert.That(HeadsAndLegs.Animals(158, 616), Is.EqualTo(new int[] { 8, 150 }));
+            Assert.That(HeadsAndLegs.Animals(72, 200), Is.EqualTo([44, 28]));
+            Assert.That(HeadsAndLegs.Animals(116, 282), Is.EqualTo([91, 25]));
+            Assert.That(HeadsAndLegs.Animals(12, 24), Is.EqualTo([12, 0]));
+            Assert.That(HeadsAndLegs.Animals(6, 24), Is.EqualTo([0, 6]));
+            Assert.That(HeadsAndLegs.Animals(344, 872), Is.EqualTo([252, 92]));
+            Assert.That(HeadsAndLegs.Animals(158, 616), Is.EqualTo([8, 150]));
         }
     }
 
@@ -35,7 +35,7 @@ public class HeadsAndLegsTest
     {
         using (Assert.EnterMultipleScope())
         {
-            Assert.That(HeadsAndLegs.Animals(0, 0), Is.EqualTo(new int[] { 0, 0 }));
+            Assert.That(HeadsAndLegs.Animals(0, 0), Is.EqualTo([0, 0]));
             Assert.That(HeadsAndLegs.Animals(-1, -1), Is.EqualTo("No solutions"));
             Assert.That(HeadsAndLegs.Animals(-45, 5), Is.EqualTo("No solutions"));
             Assert.That(HeadsAndLegs.Animals(500, 0), Is.EqualTo("No solutions"));

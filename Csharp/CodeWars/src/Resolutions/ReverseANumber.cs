@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class ReverseANumber
+public static class ReverseANumber
 {
     public static int ReverseNumber(int n) =>
         n.ToString().StartsWith('-') ?

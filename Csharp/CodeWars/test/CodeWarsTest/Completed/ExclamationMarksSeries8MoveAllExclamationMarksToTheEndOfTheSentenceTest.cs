@@ -7,10 +7,13 @@ public class ExclamationMarksSeries8MoveAllExclamationMarksToTheEndOfTheSentence
     [Test]
     public void SampleTest()
     {
-        Assert.That(ExclamationMarksSeries8MoveAllExclamationMarksToTheEndOfTheSentence.Remove("Hi!"), Is.EqualTo("Hi!"));
-        Assert.That(ExclamationMarksSeries8MoveAllExclamationMarksToTheEndOfTheSentence.Remove("Hi! Hi!"), Is.EqualTo("Hi Hi!!"));
-        Assert.That(ExclamationMarksSeries8MoveAllExclamationMarksToTheEndOfTheSentence.Remove("Hi! Hi! Hi!"), Is.EqualTo("Hi Hi Hi!!!"));
-        Assert.That(ExclamationMarksSeries8MoveAllExclamationMarksToTheEndOfTheSentence.Remove("Hi! !Hi Hi!"), Is.EqualTo("Hi Hi Hi!!!"));
+        using (Assert.EnterMultipleScope())
+        {
+            Assert.That(ExclamationMarksSeries8MoveAllExclamationMarksToTheEndOfTheSentence.Remove("Hi!"), Is.EqualTo("Hi!"));
+            Assert.That(ExclamationMarksSeries8MoveAllExclamationMarksToTheEndOfTheSentence.Remove("Hi! Hi!"), Is.EqualTo("Hi Hi!!"));
+            Assert.That(ExclamationMarksSeries8MoveAllExclamationMarksToTheEndOfTheSentence.Remove("Hi! Hi! Hi!"), Is.EqualTo("Hi Hi Hi!!!"));
+            Assert.That(ExclamationMarksSeries8MoveAllExclamationMarksToTheEndOfTheSentence.Remove("Hi! !Hi Hi!"), Is.EqualTo("Hi Hi Hi!!!"));
+        }
         Assert.That(ExclamationMarksSeries8MoveAllExclamationMarksToTheEndOfTheSentence.Remove("Hi! !Hi Hi!"), Is.EqualTo("Hi Hi Hi!!!"));
         Assert.That(ExclamationMarksSeries8MoveAllExclamationMarksToTheEndOfTheSentence.Remove("Hi! Hi!! Hi!"), Is.EqualTo("Hi Hi Hi!!!!"));
     }

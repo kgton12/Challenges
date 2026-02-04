@@ -9,9 +9,9 @@ public class FindTwinsTest
     {
         using (Assert.EnterMultipleScope())
         {
-            Assert.That(FindTwins.Elimination(new int[] { 2, 5, 34, 1, 22, 1 }), Is.EqualTo(1));
-            Assert.That(FindTwins.Elimination(new int[] { 2, 2, 34, 1, 22 }), Is.EqualTo(2));
-            Assert.That(FindTwins.Elimination(new int[] { 2, 5, 34, 1, 22 }), Is.Null);
+            Assert.That(FindTwins.Elimination([2, 5, 34, 1, 22, 1]), Is.EqualTo(1));
+            Assert.That(FindTwins.Elimination([2, 2, 34, 1, 22]), Is.EqualTo(2));
+            Assert.That(FindTwins.Elimination([2, 5, 34, 1, 22]), Is.Null);
         }
     }
 }

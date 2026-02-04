@@ -7,11 +7,14 @@ public class ExclamationMarksSeries4RemoveAllExclamationMarksFromSentenceButEnsu
     [Test]
     public void SampleTest()
     {
-        Assert.That(ExclamationMarksSeries4RemoveAllExclamationMarksFromSentenceButEnsureAExclamationMarkAtTheEndOfString.Remove("Hi!"), Is.EqualTo("Hi!"));
-        Assert.That(ExclamationMarksSeries4RemoveAllExclamationMarksFromSentenceButEnsureAExclamationMarkAtTheEndOfString.Remove("Hi!!!"), Is.EqualTo("Hi!"));
-        Assert.That(ExclamationMarksSeries4RemoveAllExclamationMarksFromSentenceButEnsureAExclamationMarkAtTheEndOfString.Remove("!Hi"), Is.EqualTo("Hi!"));
-        Assert.That(ExclamationMarksSeries4RemoveAllExclamationMarksFromSentenceButEnsureAExclamationMarkAtTheEndOfString.Remove("!Hi!"), Is.EqualTo("Hi!"));
-        Assert.That(ExclamationMarksSeries4RemoveAllExclamationMarksFromSentenceButEnsureAExclamationMarkAtTheEndOfString.Remove("Hi! Hi!"), Is.EqualTo("Hi Hi!"));
-        Assert.That(ExclamationMarksSeries4RemoveAllExclamationMarksFromSentenceButEnsureAExclamationMarkAtTheEndOfString.Remove("Hi"), Is.EqualTo("Hi!"));
+        using (Assert.EnterMultipleScope())
+        {
+            Assert.That(ExclamationMarksSeries4RemoveAllExclamationMarksFromSentenceButEnsureAExclamationMarkAtTheEndOfString.Remove("Hi!"), Is.EqualTo("Hi!"));
+            Assert.That(ExclamationMarksSeries4RemoveAllExclamationMarksFromSentenceButEnsureAExclamationMarkAtTheEndOfString.Remove("Hi!!!"), Is.EqualTo("Hi!"));
+            Assert.That(ExclamationMarksSeries4RemoveAllExclamationMarksFromSentenceButEnsureAExclamationMarkAtTheEndOfString.Remove("!Hi"), Is.EqualTo("Hi!"));
+            Assert.That(ExclamationMarksSeries4RemoveAllExclamationMarksFromSentenceButEnsureAExclamationMarkAtTheEndOfString.Remove("!Hi!"), Is.EqualTo("Hi!"));
+            Assert.That(ExclamationMarksSeries4RemoveAllExclamationMarksFromSentenceButEnsureAExclamationMarkAtTheEndOfString.Remove("Hi! Hi!"), Is.EqualTo("Hi Hi!"));
+            Assert.That(ExclamationMarksSeries4RemoveAllExclamationMarksFromSentenceButEnsureAExclamationMarkAtTheEndOfString.Remove("Hi"), Is.EqualTo("Hi!"));
+        }
     }
 }

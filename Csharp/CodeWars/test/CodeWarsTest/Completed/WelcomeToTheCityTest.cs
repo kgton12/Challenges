@@ -8,6 +8,6 @@ public class WelcomeToTheCityTest
     public void SampleTest()
     {
         string expected = "Hello, John Smith! Welcome to Phoenix, Arizona!";
-        Assert.That(WelcomeToTheCity.SayHello(new string[] { "John", "Smith" }, "Phoenix", "Arizona"), Is.EqualTo(expected));
+        Assert.That(WelcomeToTheCity.SayHello(["John", "Smith"], "Phoenix", "Arizona"), Is.EqualTo(expected));
     }
 }

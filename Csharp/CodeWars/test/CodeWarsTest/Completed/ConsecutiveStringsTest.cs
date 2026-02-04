@@ -12,14 +12,14 @@ public class ConsecutiveStringsTest
     [Test]
     public static void Test1()
     {
-        Testing(ConsecutiveStrings.LongestConsec(new String[] { "zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail" }, 2), "abigailtheta");
-        Testing(ConsecutiveStrings.LongestConsec(new String[] { "ejjjjmmtthh", "zxxuueeg", "aanlljrrrxx", "dqqqaaabbb", "oocccffuucccjjjkkkjyyyeehh" }, 1), "oocccffuucccjjjkkkjyyyeehh");
-        Testing(ConsecutiveStrings.LongestConsec(new String[] { }, 3), "");
-        Testing(ConsecutiveStrings.LongestConsec(new String[] { "itvayloxrp", "wkppqsztdkmvcuwvereiupccauycnjutlv", "vweqilsfytihvrzlaodfixoyxvyuyvgpck" }, 2), "wkppqsztdkmvcuwvereiupccauycnjutlvvweqilsfytihvrzlaodfixoyxvyuyvgpck");
-        Testing(ConsecutiveStrings.LongestConsec(new String[] { "wlwsasphmxx", "owiaxujylentrklctozmymu", "wpgozvxxiu" }, 2), "wlwsasphmxxowiaxujylentrklctozmymu");
-        Testing(ConsecutiveStrings.LongestConsec(new String[] { "zone", "abigail", "theta", "form", "libe", "zas" }, -2), "");
-        Testing(ConsecutiveStrings.LongestConsec(new String[] { "it", "wkppv", "ixoyx", "3452", "zzzzzzzzzzzz" }, 3), "ixoyx3452zzzzzzzzzzzz");
-        Testing(ConsecutiveStrings.LongestConsec(new String[] { "it", "wkppv", "ixoyx", "3452", "zzzzzzzzzzzz" }, 15), "");
-        Testing(ConsecutiveStrings.LongestConsec(new String[] { "it", "wkppv", "ixoyx", "3452", "zzzzzzzzzzzz" }, 0), "");
+        Testing(ConsecutiveStrings.LongestConsec(["zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"], 2), "abigailtheta");
+        Testing(ConsecutiveStrings.LongestConsec(["ejjjjmmtthh", "zxxuueeg", "aanlljrrrxx", "dqqqaaabbb", "oocccffuucccjjjkkkjyyyeehh"], 1), "oocccffuucccjjjkkkjyyyeehh");
+        Testing(ConsecutiveStrings.LongestConsec([], 3), "");
+        Testing(ConsecutiveStrings.LongestConsec(["itvayloxrp", "wkppqsztdkmvcuwvereiupccauycnjutlv", "vweqilsfytihvrzlaodfixoyxvyuyvgpck"], 2), "wkppqsztdkmvcuwvereiupccauycnjutlvvweqilsfytihvrzlaodfixoyxvyuyvgpck");
+        Testing(ConsecutiveStrings.LongestConsec(["wlwsasphmxx", "owiaxujylentrklctozmymu", "wpgozvxxiu"], 2), "wlwsasphmxxowiaxujylentrklctozmymu");
+        Testing(ConsecutiveStrings.LongestConsec(["zone", "abigail", "theta", "form", "libe", "zas"], -2), "");
+        Testing(ConsecutiveStrings.LongestConsec(["it", "wkppv", "ixoyx", "3452", "zzzzzzzzzzzz"], 3), "ixoyx3452zzzzzzzzzzzz");
+        Testing(ConsecutiveStrings.LongestConsec(["it", "wkppv", "ixoyx", "3452", "zzzzzzzzzzzz"], 15), "");
+        Testing(ConsecutiveStrings.LongestConsec(["it", "wkppv", "ixoyx", "3452", "zzzzzzzzzzzz"], 0), "");
     }
 }

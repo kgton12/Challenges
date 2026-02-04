@@ -14,6 +14,6 @@ public class HistogramH2Test
         "3|███████████████████████████████████ 70%\n" +
         "2|█ 3%\n" +
         "1|███ 7%\n";
-        Assert.That(HistogramH2.Histogram(new int[] { 7, 3, 70, 15, 0, 5 }), Is.EqualTo(expected));
+        Assert.That(HistogramH2.Histogram([7, 3, 70, 15, 0, 5]), Is.EqualTo(expected));
     }
 }

@@ -2,7 +2,7 @@
 
 public class EanValidation
 {
-    readonly static int[] eanValues = { 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3 };
+    readonly static int[] eanValues = [1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3];
 
     public static bool Validate(string eanCode)
     {

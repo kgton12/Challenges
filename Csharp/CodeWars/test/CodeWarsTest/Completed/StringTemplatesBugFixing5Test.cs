@@ -9,9 +9,9 @@ public class StringTemplatesBugFixing5Test
     {
         using (Assert.EnterMultipleScope())
         {
-            Assert.That(StringTemplatesBugFixing5.BuildString(new string[] { "Cheese", "Milk", "Chocolate" }), Is.EqualTo("I like Cheese, Milk, Chocolate!"));
-            Assert.That(StringTemplatesBugFixing5.BuildString(new string[] { "Cheese", "Milk" }), Is.EqualTo("I like Cheese, Milk!"));
-            Assert.That(StringTemplatesBugFixing5.BuildString(new string[] { "Chocolate" }), Is.EqualTo("I like Chocolate!"));
+            Assert.That(StringTemplatesBugFixing5.BuildString(["Cheese", "Milk", "Chocolate"]), Is.EqualTo("I like Cheese, Milk, Chocolate!"));
+            Assert.That(StringTemplatesBugFixing5.BuildString(["Cheese", "Milk"]), Is.EqualTo("I like Cheese, Milk!"));
+            Assert.That(StringTemplatesBugFixing5.BuildString(["Chocolate"]), Is.EqualTo("I like Chocolate!"));
         }
     }
 }

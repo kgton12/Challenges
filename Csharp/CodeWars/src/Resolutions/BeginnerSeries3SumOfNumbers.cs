@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class BeginnerSeries3SumOfNumbers
+public static class BeginnerSeries3SumOfNumbers
 {
     public static int GetSum(int a, int b)
     {

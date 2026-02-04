@@ -1,6 +1,6 @@
 ﻿using CodeWars.Resolutions;
 
-namespace CodeWarsTest.Completed;
+namespace CodeWarsTest;
 
 public class CalculateMeanAndConcatenateStringTest
 {

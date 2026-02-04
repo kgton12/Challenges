@@ -9,11 +9,11 @@ public class YouOnlyNeedOneBeginnerTest
     {
         using (Assert.EnterMultipleScope())
         {
-            Assert.That(YouOnlyNeedOneBeginner.Check(new object[] { 66, 101 }, 66), Is.True);
-            Assert.That(YouOnlyNeedOneBeginner.Check(new object[] { 80, 117, 115, 104, 45, 85, 112, 115 }, 45), Is.True);
+            Assert.That(YouOnlyNeedOneBeginner.Check([66, 101], 66), Is.True);
+            Assert.That(YouOnlyNeedOneBeginner.Check([80, 117, 115, 104, 45, 85, 112, 115], 45), Is.True);
 
-            Assert.That(YouOnlyNeedOneBeginner.Check(new object[] { 't', 'e', 's', 't' }, 'e'), Is.True);
-            Assert.That(YouOnlyNeedOneBeginner.Check(new object[] { "what", "a", "great", "kata" }, "kat"), Is.False);
+            Assert.That(YouOnlyNeedOneBeginner.Check(['t', 'e', 's', 't'], 'e'), Is.True);
+            Assert.That(YouOnlyNeedOneBeginner.Check(["what", "a", "great", "kata"], "kat"), Is.False);
         }
     }
 }

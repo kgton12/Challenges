@@ -10,6 +10,6 @@ public class ChainMeTest
     [Test]
     public static void ExampleTest()
     {
-        Assert.That(ChainMe.Chain(2, new[] { Add, Mul }), Is.EqualTo(360), "Incorrect Value for '2'");
+        Assert.That(ChainMe.Chain(2, [Add, Mul]), Is.EqualTo(360), "Incorrect Value for '2'");
     }
 }

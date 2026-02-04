@@ -7,9 +7,9 @@ public class LengthAndTwoValuesTest
     [Test]
     public void SampleTests()
     {
-        Assertion(new object[] { true, false, true, false, true }, (5, true, false));
-        Assertion(new object[] { "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red" }, (20, "blue", "red"));
-        Assertion(new object[0], (0, "lemons", "apples"));
+        Assertion([true, false, true, false, true], (5, true, false));
+        Assertion(["blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red"], (20, "blue", "red"));
+        Assertion([], (0, "lemons", "apples"));
     }
 
     private void Assertion(object[] expected, (int, object, object) inputs)

@@ -10,8 +10,8 @@ public class EnumerableMagic4TrueForNoneTest
     {
         using (Assert.EnterMultipleScope())
         {
-            Assert.That(EnumerableMagic4TrueForNone.None(new int[] { 1, 2, 3, 4, 5 }, v => v > 5), Is.True);
-            Assert.That(EnumerableMagic4TrueForNone.None(new int[] { 1, 2, 3, 4, 5 }, v => v > 4), Is.False);
+            Assert.That(EnumerableMagic4TrueForNone.None([1, 2, 3, 4, 5], v => v > 5), Is.True);
+            Assert.That(EnumerableMagic4TrueForNone.None([1, 2, 3, 4, 5], v => v > 4), Is.False);
         }
     }
 }

@@ -9,9 +9,9 @@ public class RemoveDuplicatesFromListTest
     {
         using (Assert.EnterMultipleScope())
         {
-            Assert.That(RemoveDuplicatesFromList.distinct(new int[] { 1 }), Is.EqualTo(new int[] { 1 }));
-            Assert.That(RemoveDuplicatesFromList.distinct(new int[] { 1, 2 }), Is.EqualTo(new int[] { 1, 2 }));
-            Assert.That(RemoveDuplicatesFromList.distinct(new int[] { 1, 1, 2 }), Is.EqualTo(new int[] { 1, 2 }));
+            Assert.That(RemoveDuplicatesFromList.distinct([1]), Is.EqualTo([1]));
+            Assert.That(RemoveDuplicatesFromList.distinct([1, 2]), Is.EqualTo([1, 2]));
+            Assert.That(RemoveDuplicatesFromList.distinct([1, 1, 2]), Is.EqualTo([1, 2]));
         }
     }
 }

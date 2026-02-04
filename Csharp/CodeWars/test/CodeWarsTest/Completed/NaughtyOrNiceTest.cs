@@ -18,11 +18,14 @@ public class NaughtyOrNiceTest
 
         var both = naughty.Concat(nice);
 
-        Assert.That(NaughtyOrNice.GetNiceNames(naughty).Count(), Is.Zero, "Wrong number of nice names");
-        Assert.That(NaughtyOrNice.GetNaughtyNames(nice).Count(), Is.Zero, "Wrong number of naughty names");
-        Assert.That(string.Join(",", NaughtyOrNice.GetNiceNames(nice)), Is.EqualTo("Ryan,Barak"));
-        Assert.That(string.Join(",", NaughtyOrNice.GetNaughtyNames(naughty)), Is.EqualTo("Marco,Luc"));
-        Assert.That(string.Join(",", NaughtyOrNice.GetNiceNames(both)), Is.EqualTo("Ryan,Barak"));
-        Assert.That(string.Join(",", NaughtyOrNice.GetNaughtyNames(both)), Is.EqualTo("Marco,Luc"));
+        using (Assert.EnterMultipleScope())
+        {
+            Assert.That(NaughtyOrNice.GetNiceNames(naughty).Count(), Is.Zero, "Wrong number of nice names");
+            Assert.That(NaughtyOrNice.GetNaughtyNames(nice).Count(), Is.Zero, "Wrong number of naughty names");
+            Assert.That(string.Join(",", NaughtyOrNice.GetNiceNames(nice)), Is.EqualTo("Ryan,Barak"));
+            Assert.That(string.Join(",", NaughtyOrNice.GetNaughtyNames(naughty)), Is.EqualTo("Marco,Luc"));
+            Assert.That(string.Join(",", NaughtyOrNice.GetNiceNames(both)), Is.EqualTo("Ryan,Barak"));
+            Assert.That(string.Join(",", NaughtyOrNice.GetNaughtyNames(both)), Is.EqualTo("Marco,Luc"));
+        }
     }
 }

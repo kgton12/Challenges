@@ -10,11 +10,11 @@ public class LocalizeTheBarycenterOfATriangleTest
         using (Assert.EnterMultipleScope())
         {
             Assert.That(LocalizeTheBarycenterOfATriangle.BarTriang(
-                    new double[] { 4, 6 }, new double[] { 12, 4 }, new double[] { 10, 10 }),
-                    Is.EqualTo(new double[] { 8.6667, 6.6667 }));
+                    [4, 6], [12, 4], [10, 10]),
+                    Is.EqualTo([8.6667, 6.6667]));
             Assert.That(LocalizeTheBarycenterOfATriangle.BarTriang(
-                new double[] { 4, 2 }, new double[] { 12, 2 }, new double[] { 6, 10 }),
-                Is.EqualTo(new double[] { 7.3333, 4.6667 }));
+                [4, 2], [12, 2], [6, 10]),
+                Is.EqualTo([7.3333, 4.6667]));
         }
     }
 }
