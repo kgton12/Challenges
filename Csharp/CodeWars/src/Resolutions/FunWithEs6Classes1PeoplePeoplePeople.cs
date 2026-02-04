@@ -1,22 +1,21 @@
 ﻿namespace CodeWars.Resolutions
 {
-    public class Person1
+    public class FunWithEs6Classes1PeoplePeoplePeoplePerson(
+        string firstName = "John",
+        string lastName = "Doe",
+        int age = 0,
+        string gender = "Male")
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public int Age { get; set; }
-        public string Gender { get; set; }
-
-        public Person1(string firstName = "John", string lastName = "Doe", int age = 0, string gender = "Male")
-        {
-            FirstName = firstName;
-            LastName = lastName;
-            Age = age;
-            Gender = gender;
-        }
+        public string FirstName { get; set; } = firstName;
+        public string LastName { get; set; } = lastName;
+        public int Age { get; set; } = age;
+        public string Gender { get; set; } = gender;
 
         public string SayFullName() => $"{FirstName} {LastName}";
 
-        public static string GreetExtraTerrestrials(string raceName) => $"Welcome to Planet Earth {raceName}";
+        public static string GreetExtraTerrestrials(string raceName)
+        {
+            return $"Welcome to Planet Earth {raceName}";
+        }
     }
 }

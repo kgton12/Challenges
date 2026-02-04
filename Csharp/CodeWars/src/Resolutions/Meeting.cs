@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class MeetingClass
+public static class MeetingClass
 {
     public static string Meeting(string s)
     {

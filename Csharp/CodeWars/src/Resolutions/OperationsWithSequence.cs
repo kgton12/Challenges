@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class OperationsWithSequence
+public static class OperationsWithSequence
 {
     public static int Calc(int[] array) =>
         array

@@ -9,6 +9,6 @@ public class LastDigitsOfANumber
                 n
                 .ToString()
                 .TakeLast(d)
-                .Select(x => x - 'a')
+                .Select(x => (int)char.GetNumericValue(x))
             ];
 }

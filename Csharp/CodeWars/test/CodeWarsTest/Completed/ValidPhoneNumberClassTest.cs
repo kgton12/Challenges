@@ -7,7 +7,10 @@ public class ValidPhoneNumberClassTest
     [Test, Order(1)]
     public void Tests()
     {
-        Assert.That(ValidPhoneNumberClass.ValidPhoneNumber("(123) 456-7890"), Is.True);
-        Assert.That(ValidPhoneNumberClass.ValidPhoneNumber("(1111)5X5 2345"), Is.False);
+        using (Assert.EnterMultipleScope())
+        {
+            Assert.That(ValidPhoneNumberClass.ValidPhoneNumber("(123) 456-7890"), Is.True);
+            Assert.That(ValidPhoneNumberClass.ValidPhoneNumber("(1111)5X5 2345"), Is.False);
+        }
     }
 }

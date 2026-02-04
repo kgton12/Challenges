@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class AvascriptFilter1
+public static class JavascriptFilter1
 {
     public static string[][] SearchNames(string[][] logins)
     {

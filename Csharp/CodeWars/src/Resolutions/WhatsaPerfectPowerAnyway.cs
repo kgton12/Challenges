@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class WhatsaPerfectPowerAnyway
+public static class WhatsaPerfectPowerAnyway
 {
     public static (int, int)? IsPerfectPower(int n)
     {

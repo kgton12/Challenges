@@ -14,6 +14,6 @@ public class SumOfTheFirstNthTermOfSeriesTest
     [Order(2)]
     public void Test2()
     {
-        Assert.That(SumOfTheFirstNthTermOfSeries.SeriesSum(9), Is.EqualTo("1.77"));
+        Assert.That(SumOfTheFirstNthTermOfSeries.SeriesSum(9), Is.EqualTo("1,77"));
     }
 }

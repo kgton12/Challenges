@@ -3,5 +3,5 @@
 public class DollarsAndCents
 {
     public static string FormatMoney(double amount) =>
-        $"${amount:F2}";
+        $"${amount:F2}".Replace(',', '.');
 }

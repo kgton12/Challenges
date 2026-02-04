@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class ComfortableWords
+public static class ComfortableWords
 {
     public static bool ComfortableWord(string word)
     {

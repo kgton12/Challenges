@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class SpecialNumberSpecialNumbersSeries5
+public static class SpecialNumberSpecialNumbersSeries5
 {
     public static string SpecialNumber(int number) =>
         number

@@ -8,5 +8,5 @@ public class DisariumNumberSpecialNumbersSeries3
         .Select((value, index) => Math.Pow(char.GetNumericValue(value), index + 1))
         .Sum() == number
         ? "Disarium !!"
-        : "Not!!";
+        : "Not !!";
 }

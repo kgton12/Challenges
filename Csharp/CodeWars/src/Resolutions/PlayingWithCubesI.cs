@@ -1,15 +1,16 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class Cube
+public class Cube(int c = 0)
 {
-    private int _side;
+    private int Side = c;
 
-    public Cube()
+    public int GetSide()
     {
-        _side = 0;
+        return Math.Abs(this.Side);
     }
 
-    public int GetSide() => _side;
-
-    public void SetSide(int v) => _side = v;
+    public void SetSide(int s)
+    {
+        this.Side = s;
+    }
 }

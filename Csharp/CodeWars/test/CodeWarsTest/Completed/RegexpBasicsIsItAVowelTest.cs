@@ -7,11 +7,14 @@ public class RegexpBasicsIsItAVowelTest
     [Test]
     public void BasicTests()
     {
-        Assert.That("".Vowel(), Is.EqualTo(false));
-        Assert.That("a".Vowel(), Is.EqualTo(true));
-        Assert.That("E".Vowel(), Is.EqualTo(true));
-        Assert.That("ou".Vowel(), Is.EqualTo(false));
-        Assert.That("z".Vowel(), Is.EqualTo(false));
-        Assert.That("lol".Vowel(), Is.EqualTo(false));
+        using (Assert.EnterMultipleScope())
+        {
+            Assert.That("".Vowel(), Is.False);
+            Assert.That("a".Vowel(), Is.True);
+            Assert.That("E".Vowel(), Is.True);
+            Assert.That("ou".Vowel(), Is.False);
+            Assert.That("z".Vowel(), Is.False);
+            Assert.That("lol".Vowel(), Is.False);
+        }
     }
 }

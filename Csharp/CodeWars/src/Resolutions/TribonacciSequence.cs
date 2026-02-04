@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class TribonacciSequence
+public static class TribonacciSequence
 {
     public static double[] Tribonacci(double[] signature, int n)
     {

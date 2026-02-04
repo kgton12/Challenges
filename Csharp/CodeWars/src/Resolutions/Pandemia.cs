@@ -1,8 +1,8 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class Pandemia
+public static class Pandemia
 {
-    public static double infected(string s)
+    public static double Infected(string s)
     {
         string[] peoples = ["0", "1"];
 

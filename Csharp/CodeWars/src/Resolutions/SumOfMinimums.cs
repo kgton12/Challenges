@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class SumOfMinimumsClass
+public static class SumOfMinimumsClass
 {
     public static int SumOfMinimums(int[,] numbers)
     {

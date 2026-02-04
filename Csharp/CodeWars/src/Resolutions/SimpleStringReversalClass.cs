@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public static class SimpleStringReversalIi
+public static class SimpleStringReversalClass
 {
     public static string Solve(string s, int a, int b)
     {

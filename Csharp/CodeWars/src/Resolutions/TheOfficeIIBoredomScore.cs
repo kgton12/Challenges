@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class TheOfficeIIBoredomScore
+public static class TheOfficeIIBoredomScore
 {
     public static string Boredom(Dictionary<string, string> staff)
     {

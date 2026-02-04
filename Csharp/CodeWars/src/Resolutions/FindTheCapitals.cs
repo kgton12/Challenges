@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class FindTheCapitals
+public static class FindTheCapitals
 {
     public static int[] Capitals(string word) =>
         [.. word

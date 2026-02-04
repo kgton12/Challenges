@@ -1,8 +1,8 @@
 ﻿namespace CodeWars.Resolutions;
 
-public class LongestPalindrome
+public static class LongestPalindrome
 {
-    public static int GetLongestPalindrome(string str)
+    public static int GetLongestPalindrome(string? str)
     {
         int bigger = 0;
 

@@ -7,8 +7,11 @@ public class GetAsciiValueOfCharacterTest
     [Test]
     public void SampleTest()
     {
-        Assert.That(GetAsciiValueOfCharacter.GetASCII('A'), Is.EqualTo(65));
-        Assert.That(GetAsciiValueOfCharacter.GetASCII(' '), Is.EqualTo(32));
-        Assert.That(GetAsciiValueOfCharacter.GetASCII('!'), Is.EqualTo(33));
+        using (Assert.EnterMultipleScope())
+        {
+            Assert.That(GetAsciiValueOfCharacter.GetASCII('A'), Is.EqualTo(65));
+            Assert.That(GetAsciiValueOfCharacter.GetASCII(' '), Is.EqualTo(32));
+            Assert.That(GetAsciiValueOfCharacter.GetASCII('!'), Is.EqualTo(33));
+        }
     }
 }

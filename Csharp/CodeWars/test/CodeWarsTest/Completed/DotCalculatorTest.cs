@@ -7,14 +7,17 @@ public class DotCalculatorTest
     [Test]
     public void SampleTest()
     {
-        Assert.That(DotCalculator.Calculator("..... + ..............."), Is.EqualTo("...................."));
-        Assert.That(DotCalculator.Calculator("..... - ..."), Is.EqualTo(".."));
-        Assert.That(DotCalculator.Calculator("..... - ."), Is.EqualTo("...."));
-        Assert.That(DotCalculator.Calculator("..... * ..."), Is.EqualTo("..............."));
-        Assert.That(DotCalculator.Calculator("..... * .."), Is.EqualTo(".........."));
-        Assert.That(DotCalculator.Calculator("..... // .."), Is.EqualTo(".."));
-        Assert.That(DotCalculator.Calculator("..... // ."), Is.EqualTo("....."));
-        Assert.That(DotCalculator.Calculator(". // .."), Is.EqualTo(""));
-        Assert.That(DotCalculator.Calculator(". - ."), Is.EqualTo(""));
+        using (Assert.EnterMultipleScope())
+        {
+            Assert.That(DotCalculator.Calculator("..... + ..............."), Is.EqualTo("...................."));
+            Assert.That(DotCalculator.Calculator("..... - ..."), Is.EqualTo(".."));
+            Assert.That(DotCalculator.Calculator("..... - ."), Is.EqualTo("...."));
+            Assert.That(DotCalculator.Calculator("..... * ..."), Is.EqualTo("..............."));
+            Assert.That(DotCalculator.Calculator("..... * .."), Is.EqualTo(".........."));
+            Assert.That(DotCalculator.Calculator("..... // .."), Is.EqualTo(".."));
+            Assert.That(DotCalculator.Calculator("..... // ."), Is.EqualTo("....."));
+            Assert.That(DotCalculator.Calculator(". // .."), Is.EqualTo(""));
+            Assert.That(DotCalculator.Calculator(". - ."), Is.EqualTo(""));
+        }
     }
 }
