@@ -1,6 +1,6 @@
 ﻿using CodeWars.Resolutions;
 
-namespace CodeWarsTest;
+namespace CodeWarsTest.Completed;
 
 public class AsciiTotalTest
 {
