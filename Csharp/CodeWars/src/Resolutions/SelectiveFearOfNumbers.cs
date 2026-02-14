@@ -1,8 +1,8 @@
-﻿namespace CodeWars;
+﻿namespace CodeWars.Resolutions;
 
 public class SelectiveFearOfNumbers
 {
-    private enum DaysWeek
+    public enum DaysWeek
     {
         Monday,
         Tuesday,
