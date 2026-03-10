@@ -1,20 +1,16 @@
-﻿namespace CodeWars.Resolutions;
+﻿using System.Text;
+
+namespace CodeWars.Resolutions;
 
 public class BinaryToTextAsciiConversion
 {
     public static string BinaryToString(string binary)
     {
-        if (string.IsNullOrWhiteSpace(binary))
-            return string.Empty;
+        byte[] bytesArr = [.. binary
+                            .Chunk(8)
+                            .Select(x => Convert.ToByte(string.Concat(x), 2))
+                          ];
 
-        binary = new string([.. binary.Where(c => c == '0' || c == '1')]);
-
-        if (binary.Length % 8 != 0)
-            throw new ArgumentException("A string binária deve ter comprimento múltiplo de 8.");
-
-        var chars = Enumerable.Range(0, binary.Length / 8)
-            .Select(i => (char)Convert.ToByte(binary.Substring(i * 8, 8), 2));
-
-        return new string([.. chars]);
+        return Encoding.ASCII.GetString(bytesArr);
     }
 }
