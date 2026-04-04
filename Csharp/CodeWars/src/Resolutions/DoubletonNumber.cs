@@ -1,4 +1,4 @@
-﻿namespace CodeWars;
+﻿namespace CodeWars.Resolutions;
 
 public class DoubletonNumber
 {
