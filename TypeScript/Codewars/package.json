@@ -4,10 +4,13 @@
 	"description": "",
 	"license": "ISC",
 	"author": "",
-	"type": "commonjs",
+	"type": "module",
 	"main": "index.ts",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"native:TS": "node --env-file=.env index.ts"
+	},
+	"devDependencies": {
+		"chai": "^6.2.2"
 	}
 }

@@ -17,7 +17,7 @@ public class StringCleaningTest
             Assert.That(StringCleaning.StringClean("Adgre2321 A1sad! A2A3A4 fv3fdv3J544K5L@"), Is.EqualTo("Adgre Asad! AAA fvfdvJKL@"));
             Assert.That(StringCleaning.StringClean("Ad2dsad3ds21 A  1$$s122ad! A2A3Ae24 f44K5L@222222 "), Is.EqualTo("Addsadds A  $$sad! AAAe fKL@ "));
             Assert.That(StringCleaning.StringClean("33333Ad2dsad3ds21 A3333  1$$s122a!d! A2!A!3Ae$24 f2##222 "), Is.EqualTo("Addsadds A  $$sa!d! A!A!Ae$ f## "));
-            Assert.That(StringCleaning.StringClean("My \"me3ssy\" d8ata issues2! Will1 th4ey ever, e3ver be3 so0lved?"), Is.EqualTo("My \"messy\" data issues! Will they ever, ever be Solved?"));
+            Assert.That(StringCleaning.StringClean("My \"me3ssy\" d8ata issues2! Will1 th4ey ever, e3ver be3 so0lved?"), Is.EqualTo("My \"messy\" data issues! Will they ever, ever be solved?"));
             Assert.That(StringCleaning.StringClean("Wh7y can't we3 bu1y the goo0d software3? #cheapskates3"), Is.EqualTo("Why can't we buy the good software? #cheapskates"));
         }
     }
