@@ -1,5 +1,5 @@
-﻿using CodeWars.Resolutions;
-using static CodeWars.Resolutions.Getnames;
+﻿using CodeWars.Completed;
+using static CodeWars.Completed.Getnames;
 
 namespace CodeWarsTest.Completed;
 

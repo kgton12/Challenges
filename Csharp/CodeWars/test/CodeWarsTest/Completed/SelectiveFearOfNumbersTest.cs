@@ -1,4 +1,4 @@
-﻿using static CodeWars.Resolutions.SelectiveFearOfNumbers;
+﻿using static CodeWars.Completed.SelectiveFearOfNumbers;
 
 namespace CodeWarsTest.Completed;
 

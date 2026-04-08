@@ -1,4 +1,4 @@
-﻿using static CodeWars.Resolutions.RockPaperScissorsLizardSpock;
+﻿using static CodeWars.Completed.RockPaperScissorsLizardSpock;
 
 namespace CodeWarsTest.Completed;
 

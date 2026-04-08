@@ -1,4 +1,4 @@
-﻿using CodeWars.Resolutions;
+﻿using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 

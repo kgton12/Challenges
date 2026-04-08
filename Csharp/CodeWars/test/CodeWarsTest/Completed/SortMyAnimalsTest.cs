@@ -1,5 +1,5 @@
-﻿using CodeWars.Resolutions;
-using static CodeWars.Resolutions.AnimalSorter;
+﻿using CodeWars.Completed;
+using static CodeWars.Completed.AnimalSorter;
 
 namespace CodeWarsTest.Completed;
 
