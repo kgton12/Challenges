@@ -9,4 +9,8 @@
     <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Incomplete\" />
+  </ItemGroup>
+
 </Project>
