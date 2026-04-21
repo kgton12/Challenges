@@ -53,9 +53,6 @@ public class Base64EncodingTest
     [TestCaseSource(nameof(TestCases))]
     public void EncodeDecodeTest(byte[] decoded, string encoded)
     {
-        //TestContext.Out.WriteLine("Encoding [{0}]", string.Join(", ", decoded));
-        //Assert.That(Base64Encoding.ToBase64(decoded), Is.EqualTo(encoded));
-        TestContext.Out.WriteLine($"Decoding {encoded}");
         Assert.That(Base64Encoding.FromBase64(encoded), Is.EqualTo(decoded));
     }
 }

@@ -7,7 +7,6 @@ public class ExcelSheetColumnNumbersTest
     [Test]
     public void Test1()
     {
-        Console.WriteLine("****** Basic Tests");
         using (Assert.EnterMultipleScope())
         {
             Assert.That(ExcelSheetColumnNumbers.TitleToNumber("A"), Is.EqualTo(1));
