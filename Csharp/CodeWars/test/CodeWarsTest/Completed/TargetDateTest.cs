@@ -1,6 +1,6 @@
 ﻿using CodeWars.Completed;
 
-namespace CodeWarsTest;
+namespace CodeWarsTest.Completed;
 
 public class TargetDateTest
 {
