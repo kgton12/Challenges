@@ -23,7 +23,7 @@ public class MergeTwoSortedListsTest
     public void MergeTwoLists_FirstListEmpty_ReturnsSecondList()
     {
         // Arrange
-        ListNode list1 = null;
+        ListNode? list1 = null;
         var list2 = new ListNode(0);
 
         // Act
@@ -38,7 +38,7 @@ public class MergeTwoSortedListsTest
     {
         // Arrange
         var list1 = new ListNode(1) { next = new ListNode(2) };
-        ListNode list2 = null;
+        ListNode? list2 = null;
 
         // Act
         var result = MergeTwoSortedLists.MergeTwoLists(list1, list2);
@@ -51,8 +51,8 @@ public class MergeTwoSortedListsTest
     public void MergeTwoLists_BothListsEmpty_ReturnsNull()
     {
         // Arrange
-        ListNode list1 = null;
-        ListNode list2 = null;
+        ListNode? list1 = null;
+        ListNode? list2 = null;
 
         // Act
         var result = MergeTwoSortedLists.MergeTwoLists(list1, list2);
@@ -61,7 +61,7 @@ public class MergeTwoSortedListsTest
         Assert.Null(result);
     }
 
-    private static void AssertListEqual(int[] expected, ListNode actual)
+    private static void AssertListEqual(int[] expected, ListNode? actual)
     {
         var current = actual;
         foreach (var value in expected)

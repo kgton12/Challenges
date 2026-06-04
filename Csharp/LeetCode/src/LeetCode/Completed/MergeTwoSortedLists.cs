@@ -2,7 +2,7 @@
 
 public static class MergeTwoSortedLists
 {
-    public static ListNode MergeTwoLists(ListNode list1, ListNode list2)
+    public static ListNode? MergeTwoLists(ListNode? list1, ListNode? list2)
     {
         ListNode dummy = new(0);
         ListNode op = dummy;
@@ -28,8 +28,8 @@ public static class MergeTwoSortedLists
 }
 
 
-public class ListNode(int val = 0, ListNode next = null)
+public class ListNode(int val = 0, ListNode? next = null)
 {
     public int val = val;
-    public ListNode next = next;
+    public ListNode? next = next;
 }
