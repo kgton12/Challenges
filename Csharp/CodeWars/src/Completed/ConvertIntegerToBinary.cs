@@ -1,4 +1,4 @@
-﻿namespace CodeWars;
+﻿namespace CodeWars.Completed;
 
 public class ConvertIntegerToBinary
 {
