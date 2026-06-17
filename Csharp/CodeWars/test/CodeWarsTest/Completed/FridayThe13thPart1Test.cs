@@ -12,6 +12,6 @@ public class FridayThe13thPart1Test
         {"Mike", 7},
         {"Alysa", 3}
       };
-        Assert.That(FridayThe13thPart1.KillCount(counselors, 7), Is.EqualTo(new string[] { "Alysa" }));
+        Assert.That(FridayThe13thPart1.KillCount(counselors, 7), Is.EqualTo(["Alysa"]));
     }
 }
