@@ -1,7 +1,7 @@
-﻿using CodeWars;
+﻿using CodeWars.Completed;
 using NUnit.Framework.Internal;
 
-namespace CodeWarsTest;
+namespace CodeWarsTest.Completed;
 
 public class LoopDetectorTest
 {
