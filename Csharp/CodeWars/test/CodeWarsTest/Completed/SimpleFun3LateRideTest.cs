@@ -1,6 +1,6 @@
-﻿using CodeWars;
+﻿using CodeWars.Completed;
 
-namespace CodeWarsTest;
+namespace CodeWarsTest.Completed;
 
 [TestFixture]
 public class SimpleFun3LateRideTest
