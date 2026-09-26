@@ -1,4 +1,4 @@
-﻿namespace LeetCode;
+﻿namespace LeetCode.Completed;
 
 public class ValidParentheses
 {

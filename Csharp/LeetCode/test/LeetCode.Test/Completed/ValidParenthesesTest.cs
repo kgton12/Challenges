@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Test;
+﻿using LeetCode.Completed;
+
+namespace LeetCode.Test.Completed;
 
 public static class ValidParenthesesTest
 {
