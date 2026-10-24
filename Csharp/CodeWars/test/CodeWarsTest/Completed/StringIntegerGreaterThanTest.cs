@@ -1,6 +1,6 @@
 ﻿using CodeWars;
 
-namespace CodeWarsTest;
+namespace CodeWarsTest.Completed;
 
 
 [TestFixture]
