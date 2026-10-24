@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class ShorterConcatReverseLongerTest
 {
-    [Test, Order(1)]
+    [Test]
     public void ReverLongerTest_1()
     {
         try
@@ -23,7 +23,7 @@ public class ShorterConcatReverseLongerTest
         }
     }
 
-    [Test, Order(2)]
+    [Test]
     public void ReverLongerTest_2()
     {
         try
@@ -42,7 +42,7 @@ public class ShorterConcatReverseLongerTest
         }
     }
 
-    [Test, Order(3)]
+    [Test]
     public void ReverLongerTest_3()
     {
         try

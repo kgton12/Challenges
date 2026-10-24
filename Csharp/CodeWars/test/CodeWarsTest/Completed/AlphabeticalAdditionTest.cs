@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class AlphabeticalAdditionTest
 {
-    [Test, Order(1)]
+    [Test]
     public void BasicTests()
     {
         using (Assert.EnterMultipleScope())

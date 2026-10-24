@@ -1,10 +1,10 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class GapInPrimesTest
 {
-    [Test, Order(1)]
+    [Test]
     public static void Test1()
     {
         using (Assert.EnterMultipleScope())

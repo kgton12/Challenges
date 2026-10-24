@@ -1,10 +1,10 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class TripleCrownClassTest
 {
-    [Test, Order(1)]
+    [Test]
     public void FixedTestOne()
     {
         Dictionary<string, Dictionary<string, int>> receivers = new Dictionary<string, Dictionary<string, int>>()
@@ -41,7 +41,7 @@ public class TripleCrownClassTest
         Assert.That(actual, Is.EqualTo(expected));
     }
 
-    [Test, Order(2)]
+    [Test]
     public void FixedTestTwo()
     {
         Dictionary<string, Dictionary<string, int>> receivers = new Dictionary<string, Dictionary<string, int>>()
@@ -78,7 +78,7 @@ public class TripleCrownClassTest
         Assert.That(actual, Is.EqualTo(expected));
     }
 
-    [Test, Order(3)]
+    [Test]
     public void FixedTestThree()
     {
         Dictionary<string, Dictionary<string, int>> receivers = new Dictionary<string, Dictionary<string, int>>()

@@ -1,4 +1,4 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
@@ -9,7 +9,7 @@ public class MumblingTest
         Assert.That(actual, Is.EqualTo(expected));
     }
 
-    [Test, Order(1)]
+    [Test]
     public static void Test1()
     {
         Testing(Mumbling.Accum("ZpglnRxqenU"), "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu");

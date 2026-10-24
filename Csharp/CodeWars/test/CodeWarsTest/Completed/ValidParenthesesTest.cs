@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class ValidParenthesesTest
 {
-    [Test, Order(1)]
+    [Test]
     public void TestValidParentheses()
     {
         DoTest(true, "()");
@@ -14,7 +14,7 @@ public class ValidParenthesesTest
         DoTest(true, "()(())((()))(())()");
     }
 
-    [Test, Order(2)]
+    [Test]
     public void TestInvalidParentheses()
     {
         DoTest(false, ")(");
@@ -25,7 +25,7 @@ public class ValidParenthesesTest
         DoTest(false, ")");
     }
 
-    [Test, Order(3)]
+    [Test]
     public void TestEmptyString()
     {
         DoTest(true, "");

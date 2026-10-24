@@ -1,16 +1,16 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class CompareStringsBySumOfCharsTest
 {
-    [Test, Order(1)]
+    [Test]
     public void Compare1()
     {
         Assert.That(CompareStringsBySumOfChars.Compare("AD", "BC"), Is.True);
     }
 
-    [Test, Order(2)]
+    [Test]
     public void Compare2()
     {
         Assert.That(CompareStringsBySumOfChars.Compare("AD", "DD"), Is.False);

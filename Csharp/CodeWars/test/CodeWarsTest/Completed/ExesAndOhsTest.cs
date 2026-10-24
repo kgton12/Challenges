@@ -5,7 +5,6 @@ namespace CodeWarsTest.Completed;
 public class ExesAndOhsTest
 {
     [Test]
-    [Order(1)]
     public void ExampleTests()
     {
         using (Assert.EnterMultipleScope())

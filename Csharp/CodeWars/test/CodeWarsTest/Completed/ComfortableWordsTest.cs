@@ -1,10 +1,10 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class ComfortableWordsTest
 {
-    [Test, Order(1)]
+    [Test]
     public void ConfortableWords()
     {
         using (Assert.EnterMultipleScope())
@@ -15,7 +15,7 @@ public class ComfortableWordsTest
         }
     }
 
-    [Test, Order(2)]
+    [Test]
     public void NotConfortableWords()
     {
         using (Assert.EnterMultipleScope())

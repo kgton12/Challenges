@@ -4,13 +4,13 @@ namespace CodeWarsTest.Completed;
 
 public class NumberOfOccurrencesClassTest
 {
-    [Test, Order(1)]
+    [Test]
     public void Should_Work_On_Empty_List()
     {
         Assert.That(NumberOfOccurrencesClass.NumberOfOccurrences(2, []), Is.EqualTo(0));
     }
 
-    [Test, Order(2)]
+    [Test]
     public void Should_Work_On_Examples()
     {
         var example = new int[] { 4, 0, 4 };

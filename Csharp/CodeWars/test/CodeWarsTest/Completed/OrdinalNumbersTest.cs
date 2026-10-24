@@ -5,7 +5,7 @@ namespace CodeWarsTest.Completed;
 [TestFixture]
 public class OrdinalNumbersTest
 {
-    [Test, Order(1)]
+    [Test]
     public void BasicTests()
     {
         using (Assert.EnterMultipleScope())
@@ -20,7 +20,7 @@ public class OrdinalNumbersTest
         }
     }
 
-    [Test, Order(2)]
+    [Test]
     public void BriefTests()
     {
         Test(0, "th", true);
@@ -33,7 +33,7 @@ public class OrdinalNumbersTest
         Test(3, "rd", false);
     }
 
-    [Test, Order(3)]
+    [Test]
     public void ExtendedTests()
     {
         Test(11, "th", false);

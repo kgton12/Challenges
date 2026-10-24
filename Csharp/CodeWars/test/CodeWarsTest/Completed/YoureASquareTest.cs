@@ -1,10 +1,10 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class YoureASquareTest
 {
-    [Test, Order(1)]
+    [Test]
     public static void ShouldWorkForSomeExamples()
     {
         using (Assert.EnterMultipleScope())

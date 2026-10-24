@@ -4,13 +4,13 @@ namespace CodeWarsTest.Completed;
 
 public class IsValidIdentifierTest
 {
-    [Test, Order(1)]
+    [Test]
     public void TestValid()
     {
         Assert.That(IsValidIdentifier.IsValid("i1"), Is.True, "IsValid(\"i1\") should returns true");
     }
 
-    [Test, Order(2)]
+    [Test]
     public void TestInvalid()
     {
         Assert.That(IsValidIdentifier.IsValid("1i"), Is.False, "IsValid(\"1i\") should returns false");

@@ -16,6 +16,6 @@ public class YouCantCodeUnderPressure1Test
         }
     }
 
-    [Test, TestCaseSource(nameof(TestCases)), Order(1)]
+    [Test, TestCaseSource(nameof(TestCases))]
     public int Test(int n) => YouCantCodeUnderPressure1.DoubleInteger(n);
 }

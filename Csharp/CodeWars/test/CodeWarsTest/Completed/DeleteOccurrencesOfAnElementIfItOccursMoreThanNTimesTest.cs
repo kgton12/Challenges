@@ -5,7 +5,6 @@ namespace CodeWarsTest.Completed;
 public class DeleteOccurrencesOfAnElementIfItOccursMoreThanNTimesTest
 {
     [Test]
-    [Order(1)]
     public void TestSimple()
     {
         var expected = new int[] { 20, 37, 21 };
@@ -16,7 +15,6 @@ public class DeleteOccurrencesOfAnElementIfItOccursMoreThanNTimesTest
     }
 
     [Test]
-    [Order(2)]
     public void TestSimple2()
     {
         var expected = new int[] { 1, 1, 3, 3, 7, 2, 2, 2 };

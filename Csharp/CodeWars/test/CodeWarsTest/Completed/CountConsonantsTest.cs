@@ -1,10 +1,10 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class CountConsonantsTest
 {
-    [Test, Order(1)]
+    [Test]
     [TestCase("", ExpectedResult = 0)]
     [TestCase("aaaaa", ExpectedResult = 0)]
     [TestCase("Bbbbb", ExpectedResult = 5)]

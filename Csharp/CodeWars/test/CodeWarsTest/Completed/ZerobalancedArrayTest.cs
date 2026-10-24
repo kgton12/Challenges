@@ -1,4 +1,4 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
@@ -11,7 +11,7 @@ public class ZerobalancedArrayTest
     }
 
     [Test, Description("Sample tests")]
-    [Order(1)]
+    
     public void FixedTests()
     {
         ArraysWithZeroes();

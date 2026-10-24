@@ -4,25 +4,25 @@ namespace CodeWarsTest.Completed;
 
 public class EvensTimesLastTest
 {
-    [Test, Order(1)]
+    [Test]
     public void EmptyArrayTest()
     {
         Assert.That(EvensTimesLast.EvenTimesLast(Array.Empty<int>()), Is.Zero);
     }
 
-    [Test, Order(2)]
+    [Test]
     public void ArrayWithOneElementTest()
     {
         Assert.That(EvensTimesLast.EvenTimesLast([7]), Is.EqualTo(49));
     }
 
-    [Test, Order(3)]
+    [Test]
     public void ArrayWithTwoElementsTest()
     {
         Assert.That(EvensTimesLast.EvenTimesLast([7, 13]), Is.EqualTo(91));
     }
 
-    [Test, Order(4)]
+    [Test]
     public void MyTest()
     {
         using (Assert.EnterMultipleScope())

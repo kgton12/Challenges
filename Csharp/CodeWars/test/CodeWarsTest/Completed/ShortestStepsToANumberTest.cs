@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class ShortestStepsToANumberTest
 {
-    [Test, Order(1)]
+    [Test]
     public void SimpleTests()
     {
         using (Assert.EnterMultipleScope())
@@ -16,7 +16,7 @@ public class ShortestStepsToANumberTest
         }
     }
 
-    [Test, Order(2)]
+    [Test]
     public void SmallNumbers()
     {
         using (Assert.EnterMultipleScope())
@@ -48,7 +48,7 @@ public class ShortestStepsToANumberTest
         }
     }
 
-    [Test, Order(3)]
+    [Test]
     public void BigNumbers()
     {
         using (Assert.EnterMultipleScope())
@@ -81,7 +81,7 @@ public class ShortestStepsToANumberTest
         }
     }
 
-    [Test, Order(4)]
+    [Test]
     public void SmallRandomNumbers()
     {
         Random rd = new();
@@ -93,7 +93,7 @@ public class ShortestStepsToANumberTest
         }
     }
 
-    [Test, Order(5)]
+    [Test]
     public void BigRandomNumbers()
     {
         Random rd = new();

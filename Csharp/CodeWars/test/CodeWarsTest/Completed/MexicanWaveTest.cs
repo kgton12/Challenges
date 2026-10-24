@@ -5,7 +5,6 @@ namespace CodeWarsTest.Completed;
 public class MexicanWaveTest
 {
     [TestCase]
-    [Order(1)]
     public void BasicTest1()
     {
         List<string> result = ["Hello", "hEllo", "heLlo", "helLo", "hellO"];
@@ -13,7 +12,6 @@ public class MexicanWaveTest
     }
 
     [TestCase]
-    [Order(2)]
     public void BasicTest2()
     {
         List<string> result = ["Codewars", "cOdewars", "coDewars", "codEwars", "codeWars", "codewArs", "codewaRs", "codewarS"];
@@ -21,7 +19,6 @@ public class MexicanWaveTest
     }
 
     [TestCase]
-    [Order(3)]
     public void BasicTest3()
     {
         List<string> result = [];
@@ -29,7 +26,6 @@ public class MexicanWaveTest
     }
 
     [TestCase]
-    [Order(4)]
     public void BasicTest4()
     {
         List<string> result = ["Two words", "tWo words", "twO words", "two Words", "two wOrds", "two woRds", "two worDs", "two wordS"];
@@ -37,7 +33,6 @@ public class MexicanWaveTest
     }
 
     [TestCase]
-    [Order(5)]
     public void BasicTest5()
     {
         List<string> result = [" Gap ", " gAp ", " gaP "];

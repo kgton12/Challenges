@@ -1,10 +1,10 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class TemperatureAnalysisITest
 {
-    [Test, Order(1)]
+    [Test]
     public void MyTest()
     {
         using (Assert.EnterMultipleScope())

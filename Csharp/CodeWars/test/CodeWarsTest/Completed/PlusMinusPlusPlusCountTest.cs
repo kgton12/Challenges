@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class PlusMinusPlusPlusCountTest
 {
-    [Test, Order(1), Description("Lists With 0 Sign Changes")]
+    [Test, Description("Lists With 0 Sign Changes")]
     public void ZeroChanges()
     {
         using (Assert.EnterMultipleScope())
@@ -20,7 +20,7 @@ public class PlusMinusPlusPlusCountTest
         }
     }
 
-    [Test, Order(2), Description("Lists With 1 Sign Change")]
+    [Test, Description("Lists With 1 Sign Change")]
     public void OneChange()
     {
         using (Assert.EnterMultipleScope())
@@ -33,7 +33,7 @@ public class PlusMinusPlusPlusCountTest
         }
     }
 
-    [Test, Order(3), Description("Lists With 2 Sign Changes")]
+    [Test, Description("Lists With 2 Sign Changes")]
     public void TwoChanges()
     {
         using (Assert.EnterMultipleScope())
@@ -44,7 +44,7 @@ public class PlusMinusPlusPlusCountTest
         }
     }
 
-    [Test, Order(4), Description("Lists With 3+ Sign Changes")]
+    [Test, Description("Lists With 3+ Sign Changes")]
     public void MoreChanges()
     {
         using (Assert.EnterMultipleScope())

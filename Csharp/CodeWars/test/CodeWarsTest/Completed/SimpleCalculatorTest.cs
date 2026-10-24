@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class SimpleCalculatorTest
 {
-    [Test, Description("should calculate the result of valid inputs"), Order(1)]
+    [Test, Description("should calculate the result of valid inputs")]
     public void Test()
     {
         using (Assert.EnterMultipleScope())
@@ -16,7 +16,7 @@ public class SimpleCalculatorTest
         }
     }
 
-    [Test, Description("should throw ArgumentException with invalid inputs"), Order(2)]
+    [Test, Description("should throw ArgumentException with invalid inputs")]
     public void ErrorTest()
     {
         Assert.That(() => SimpleCalculator.Calculator(6, 2, '&'), Throws.ArgumentException);

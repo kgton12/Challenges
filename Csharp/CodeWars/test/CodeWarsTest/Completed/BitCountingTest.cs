@@ -1,4 +1,4 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
@@ -10,7 +10,7 @@ public class BitCountingTest
         Assert.That(actual, Is.EqualTo(expected), "for n = " + input);
     }
 
-    [Test, Order(1)]
+    [Test]
     public void FixedTests()
     {
         DoTest(0, 0);

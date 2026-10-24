@@ -1,4 +1,4 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
@@ -9,7 +9,7 @@ public class LookingForABenefactorTest
         Assert.That(actual, Is.EqualTo(expected));
     }
 
-    [Test, Order(1)]
+    [Test]
     public static void BasicTests()
     {
         double[] a = [14, 30, 5, 7, 9, 11, 15];
@@ -18,7 +18,7 @@ public class LookingForABenefactorTest
         Testing(LookingForABenefactor.NewAvg(a, 90), 628);
     }
 
-    [Test, Order(2)]
+    [Test]
     public static void ErrorTests()
     {
         double[] a = [14, 30, 5, 7, 9, 11, 15];

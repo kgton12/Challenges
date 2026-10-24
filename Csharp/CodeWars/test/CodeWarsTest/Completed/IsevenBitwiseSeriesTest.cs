@@ -1,17 +1,17 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class IsevenBitwiseSeriesTest
 {
-    [Test, Order(1)]
+    [Test]
     public void IsEven_SourceCode_DoesNotContainModOperator()
     {
         //var text = File.ReadAllText("/workspace/solution.txt");
         //Assert.That(text.Contains("%"), Is.False);
     }
 
-    [Order(2)]
+    
     [TestCase(true, 2)]
     [TestCase(false, 3)]
     [TestCase(true, 14)]

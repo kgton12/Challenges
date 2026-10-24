@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class FindArrayClassTest
 {
-    [Test, Description("Basic tests"), Order(1)]
+    [Test, Description("Basic tests")]
     public void BasicTest()
     {
         using (Assert.EnterMultipleScope())
@@ -16,7 +16,7 @@ public class FindArrayClassTest
         }
     }
 
-    [Test, Description("Less basic tests"), Order(2)]
+    [Test, Description("Less basic tests")]
     public void EdgeTest()
     {
         using (Assert.EnterMultipleScope())

@@ -1,10 +1,10 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class FoursevenClassTest
 {
-    [Test, Order(1)]
+    [Test]
     public void CorrectTests()
     {
         using (Assert.EnterMultipleScope())
@@ -14,7 +14,7 @@ public class FoursevenClassTest
         }
     }
 
-    [Test, Order(2)]
+    [Test]
     public void WrongTests()
     {
         using (Assert.EnterMultipleScope())

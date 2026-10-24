@@ -6,7 +6,7 @@ namespace CodeWarsTest.Completed;
 
 public class SumOfGroupsTest
 {
-    [Test, Order(1)]
+    [Test]
     public void TestExample1()
     {
         var numbers = new BigInteger[] { 1234, 3142, 66654, 65466, 2143 };
@@ -14,7 +14,7 @@ public class SumOfGroupsTest
         Assert.That(result, Is.EqualTo(19));
     }
 
-    [Test, Order(2)]
+    [Test]
     public void TestExample2()
     {
         var numbers = new BigInteger[] { 12345, 54321, 98765, 56789, 12354, 54312 };
@@ -22,7 +22,7 @@ public class SumOfGroupsTest
         Assert.That(result, Is.EqualTo(23));
     }
 
-    [Test, Order(3)]
+    [Test]
     public void TestExample3()
     {
         var numbers = new BigInteger[] { 111, 11, 1, 222, 22, 2 };
@@ -30,7 +30,7 @@ public class SumOfGroupsTest
         Assert.That(result, Is.Zero);
     }
 
-    [Test, Order(4)]
+    [Test]
     public void TestSingleElement()
     {
         var numbers = new BigInteger[] { 1234567890 };
@@ -38,7 +38,7 @@ public class SumOfGroupsTest
         Assert.That(result, Is.Zero);
     }
 
-    [Test, Order(5)]
+    [Test]
     public void TestSingleElementZero()
     {
         var numbers = new BigInteger[] { 0 };
@@ -46,7 +46,7 @@ public class SumOfGroupsTest
         Assert.That(result, Is.Zero);
     }
 
-    [Test, Order(6)]
+    [Test]
     public void TestNoAnagramGroups()
     {
         var numbers = new BigInteger[] { 123, 456, 789, 101112 };
@@ -54,7 +54,7 @@ public class SumOfGroupsTest
         Assert.That(result, Is.Zero);
     }
 
-    [Test, Order(7)]
+    [Test]
     public void TestLargeNumbers()
     {
         var numbers = new BigInteger[]
@@ -69,7 +69,7 @@ public class SumOfGroupsTest
         Assert.That(result, Is.EqualTo(90)); // Ejemplo de suma de dígitos después del cálculo
     }
 
-    [Test, Order(8)]
+    [Test]
     public void TestVeryLargeNumbers()
     {
         var numbers = new BigInteger[]
@@ -88,7 +88,7 @@ public class SumOfGroupsTest
         Assert.That(result, Is.EqualTo(32)); // Ejemplo de suma de dígitos después del cálculo
     }
 
-    [Test, Order(9)]
+    [Test]
     public void TestMultipleAnagramGroups()
     {
         var numbers = new BigInteger[]
@@ -105,7 +105,7 @@ public class SumOfGroupsTest
         Assert.That(result, Is.EqualTo(18)); // 1122 (del primer grupo) + 3333 (del segundo grupo) = 4455 => 4 + 4 + 5 + 5 = 18
     }
 
-    [Test, Order(10)]
+    [Test]
     public void TestWithLeadingZeros()
     {
         var numbers = new BigInteger[]
@@ -119,7 +119,7 @@ public class SumOfGroupsTest
         Assert.That(result, Is.EqualTo(6));  // Ejemplo de grupo con ceros a la izquierda
     }
 
-    [Test, Order(11)]
+    [Test]
     public void TestIdenticalNumbers()
     {
         var numbers = new BigInteger[]
@@ -134,7 +134,7 @@ public class SumOfGroupsTest
 
     static readonly Random rand = new(DateTime.Now.Millisecond);
 
-    [Test, Order(12)]
+    [Test]
     public void SmallRandomTest()
     {
         for (int i = 0; i < 10; i++)
@@ -146,7 +146,7 @@ public class SumOfGroupsTest
         }
     }
 
-    [Test, Order(13)]
+    [Test]
     public void MediumRandomTest()
     {
         for (int i = 0; i < 50; i++)
@@ -158,7 +158,7 @@ public class SumOfGroupsTest
         }
     }
 
-    [Test, Order(14)]
+    [Test]
     public void BigRandomTest()
     {
         for (int i = 0; i < 500; i++)

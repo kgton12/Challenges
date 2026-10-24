@@ -4,19 +4,19 @@ namespace CodeWarsTest.Completed;
 
 public class CorrectTheDateStringTest
 {
-    [Test, Order(1)]
+    [Test]
     public void NullTest()
     {
         Assert.That(CorrectTheDateString.Correct(null), Is.Null);
     }
 
-    [Test, Order(2)]
+    [Test]
     public void EmptyTest()
     {
         Assert.That(CorrectTheDateString.Correct(""), Is.EqualTo(""));
     }
 
-    [Test, Order(3)]
+    [Test]
     public void InvalidFormatTests()
     {
         using (Assert.EnterMultipleScope())
@@ -27,7 +27,7 @@ public class CorrectTheDateStringTest
         }
     }
 
-    [Test, Order(4)]
+    [Test]
     public void CorrectionTests()
     {
         using (Assert.EnterMultipleScope())

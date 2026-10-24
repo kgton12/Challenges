@@ -4,13 +4,13 @@ namespace CodeWarsTest.Completed;
 
 public class AreaOfACircleTest
 {
-    [Test, Order(1)]
+    [Test]
     public void TestPositiveNumber()
     {
         Assert.That(AreaOfACircle.CalculateAreaOfCircle(1), Is.EqualTo(3.141).Within(0.01));
     }
 
-    [Test, Order(2)]
+    [Test]
     public void TestExamples()
     {
         using (Assert.EnterMultipleScope())
@@ -20,13 +20,13 @@ public class AreaOfACircleTest
         }
     }
 
-    [Test, Order(3)]
+    [Test]
     public void TestZero()
     {
         Assert.That(() => AreaOfACircle.CalculateAreaOfCircle(0), Throws.TypeOf<ArgumentException>());
     }
 
-    [Test, Order(4)]
+    [Test]
     public void TestNegativeNumber()
     {
         Assert.That(() => AreaOfACircle.CalculateAreaOfCircle(-1), Throws.TypeOf<ArgumentException>());

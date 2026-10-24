@@ -1,10 +1,10 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class GrasshoppersummationTest
 {
-    [Test, Order(1)]
+    [Test]
     public static void BasicTests()
     {
         using (Assert.EnterMultipleScope())

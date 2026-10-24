@@ -1,10 +1,10 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class FilteringEvenNumbersBugFixesTest
 {
-    [Test, Order(1)]
+    [Test]
     public void FirstTest()
     {
         List<int> listOfNumbers = [1, 2, 2, 2, 4, 3, 4, 5, 6, 7];
@@ -12,7 +12,7 @@ public class FilteringEvenNumbersBugFixesTest
         Assert.That(FilteringEvenNumbersBugFixes.FilterOddNumber(listOfNumbers), Is.EqualTo(expectedResult));
     }
 
-    [Test, Order(2)]
+    [Test]
     public void SecondTest()
     {
         List<int> listOfNumbers = [1, 2, 2, 2, 4, 3, 4];

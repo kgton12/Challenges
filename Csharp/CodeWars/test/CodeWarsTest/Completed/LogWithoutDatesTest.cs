@@ -1,10 +1,10 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class LogWithoutDatesTest
 {
-    [Test, Order(1)]
+    [Test]
     public void SampleTest()
     {
         using (Assert.EnterMultipleScope())
@@ -24,7 +24,7 @@ public class LogWithoutDatesTest
 
     private static readonly Random Rand = new();
 
-    [Test, Order(2)]
+    [Test]
     public void RandomTest()
     {
         for (var i = 0; i < 100; i++)

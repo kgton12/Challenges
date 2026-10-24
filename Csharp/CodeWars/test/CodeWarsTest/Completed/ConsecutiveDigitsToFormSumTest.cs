@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class ConsecutiveDigitsToFormSumTest
 {
-    [Test, Order(1)]
+    [Test]
     public void SmallValues()
     {
         using (Assert.EnterMultipleScope())
@@ -28,7 +28,7 @@ public class ConsecutiveDigitsToFormSumTest
         }
     }
 
-    [Test, Order(2)]
+    [Test]
     public void MediumValues()
     {
         using (Assert.EnterMultipleScope())
@@ -51,7 +51,7 @@ public class ConsecutiveDigitsToFormSumTest
         }
     }
 
-    [Test, Order(3)]
+    [Test]
     public void LargeValues()
     {
         using (Assert.EnterMultipleScope())

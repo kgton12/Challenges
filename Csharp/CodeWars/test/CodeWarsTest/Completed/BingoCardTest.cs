@@ -4,20 +4,20 @@ namespace CodeWarsTest.Completed;
 
 public class BingoCardTest
 {
-    [Test, Order(1)]
+    [Test]
     public void CardHas24Numbers()
     {
         Assert.That(BingoCard.GetCard(), Has.Length.EqualTo(24));
     }
 
-    [Test, Order(2)]
+    [Test]
     public void EachNumberOnCardIsUnique()
     {
         var card = BingoCard.GetCard();
         Assert.That(card, Has.Length.EqualTo(card.ToList().Distinct().Count()));
     }
 
-    [Order(3)]
+
     [TestCase("B", 5)]
     [TestCase("I", 5)]
     [TestCase("N", 4)]
@@ -29,7 +29,7 @@ public class BingoCardTest
         Assert.That(numbers, Has.Count.EqualTo(count));
     }
 
-    [Test, Order(4)]
+    [Test]
     public void NumbersAreOrderedByColumn()
     {
         var columns = string.Join("", BingoCard.GetCard().ToList()
@@ -37,7 +37,7 @@ public class BingoCardTest
 
         Assert.That(columns, Does.Match("^[B]*[I]*[N]*[G]*[O]*$"));
     }
-    [Order(5)]
+
     [TestCase("B", 1, 15)]
     [TestCase("I", 16, 30)]
     [TestCase("N", 31, 45)]
@@ -55,7 +55,7 @@ public class BingoCardTest
         }
     }
 
-    [Test, Order(6)]
+    [Test]
     public void NumbersWithinColumnAreInRandomOrder()
     {
         var card = BingoCard.GetCard().Select(x => Convert.ToInt32(x[1..])).ToArray();
@@ -72,7 +72,7 @@ public class BingoCardTest
 
         Assert.That(isRandom, Is.True, "Unlikely result, is the list ordered?");
     }
-    [Test, Order(7)]
+    [Test]
     public void RandomnessTest()
     {
         var card = BingoCard.GetCard();

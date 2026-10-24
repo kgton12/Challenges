@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class ReturnTheClosestNumberMultipleOf10Test
 {
-    [Test, Order(1)]
+    [Test]
     public void _0_ShouldReturn10ForNumbersFrom10To14()
     {
         for (int i = 10; i <= 14; ++i)
@@ -13,7 +13,7 @@ public class ReturnTheClosestNumberMultipleOf10Test
         }
     }
 
-    [Test, Order(2)]
+    [Test]
     public void _1_ShouldReturn20ForNumbersFrom15To20()
     {
         for (int i = 15; i <= 20; ++i)

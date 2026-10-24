@@ -15,35 +15,35 @@ public class CompleteSeriesClassTest
             sol4 = [0, 1, 2],
             sol5 = [0];
 
-    [Test, Order(1)]
+    [Test]
     public void Test1()
     {
         int[] actual = CompleteSeriesClass.CompleteSeries(test1);
         Assert.That(actual, Is.EqualTo(sol1));
     }
 
-    [Test, Order(2)]
+    [Test]
     public void Test2()
     {
         int[] actual = CompleteSeriesClass.CompleteSeries(test2);
         Assert.That(actual, Is.EqualTo(sol2));
     }
 
-    [Test, Order(3)]
+    [Test]
     public void Test3()
     {
         int[] actual = CompleteSeriesClass.CompleteSeries(test3);
         Assert.That(actual, Is.EqualTo(sol3));
     }
 
-    [Test, Order(4)]
+    [Test]
     public void Test4()
     {
         int[] actual = CompleteSeriesClass.CompleteSeries(test4);
         Assert.That(actual, Is.EqualTo(sol4));
     }
 
-    [Test, Order(5)]
+    [Test]
     public void Test5()
     {
         int[] actual = CompleteSeriesClass.CompleteSeries(test5);

@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class FindSumOfTopleftToBottomrightDiagonalsTest
 {
-    [Test, Order(1)]
+    [Test]
     public void SampleTest()
     {
         using (Assert.EnterMultipleScope())

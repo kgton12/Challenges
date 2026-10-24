@@ -4,21 +4,21 @@ namespace CodeWarsTest.Completed;
 
 public class RefactorVariableNamesToVariableKeywordsTest
 {
-    [Test, Order(1)]
+    [Test]
     public void TestBoolVariable()
     {
         RefactorVariableNamesToVariableKeywords variables = new();
         Assert.That(CheckType(variables, "bool", typeof(bool)), Is.True);
     }
 
-    [Test, Order(2)]
+    [Test]
     public void TestCharVariable()
     {
         RefactorVariableNamesToVariableKeywords variables = new();
         Assert.That(CheckType(variables, "char", typeof(char)), Is.True);
     }
 
-    [Test, Order(3)]
+    [Test]
     public void TestSbyteVariable()
     {
         RefactorVariableNamesToVariableKeywords variables = new();

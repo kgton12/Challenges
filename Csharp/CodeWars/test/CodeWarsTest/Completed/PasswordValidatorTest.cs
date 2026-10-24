@@ -1,10 +1,10 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class PasswordValidatorTest
 {
-    [Test, Order(1)]
+    [Test]
     [Description("Valid passwords")]
     public void TestValidPasswords()
     {
@@ -15,42 +15,42 @@ public class PasswordValidatorTest
         DoTest("4aA1----", true);
     }
 
-    [Test, Order(2)]
+    [Test]
     [Description("Too short passwords")]
     public void TestTooShortPasswords()
     {
         DoTest("Abcd123", false);
     }
 
-    [Test, Order(2)]
+    [Test]
     [Description("Missing uppercase letters")]
     public void TestMissingUppercaseLetters()
     {
         DoTest("abcd1234", false);
     }
 
-    [Test, Order(2)]
+    [Test]
     [Description("Missing digits")]
     public void TestMissingDigits()
     {
         DoTest("abcdABCD", false);
     }
 
-    [Test, Order(2)]
+    [Test]
     [Description("Missing lowercase letters")]
     public void TestMissingLowercaseLetters()
     {
         DoTest("ABCD1234", false);
     }
 
-    [Test, Order(2)]
+    [Test]
     [Description("Only special characters")]
     public void TestOnlySpecialCharacters()
     {
         DoTest("!@#$%^&*()-_+={}[]|:;?/>.<,", false);
     }
 
-    [Test, Order(2)]
+    [Test]
     [Description("Empty password")]
     public void TestEmptyPassword()
     {

@@ -5,7 +5,6 @@ namespace CodeWarsTest.Completed;
 public class SumOfMultiplesTest
 {
     [Test, Description("Should produce expected results for valid inputs")]
-    [Order(1)]
     public void SampleTest()
     {
         using (Assert.EnterMultipleScope())
@@ -18,7 +17,6 @@ public class SumOfMultiplesTest
     }
 
     [Test, Description("Should throw for invalid inputs")]
-    [Order(2)]
     public void ErrorTest()
     {
         Assert.That(() => SumOfMultiples.SumMul(4, 1), Throws.TypeOf<ArgumentException>(), "n = 4, m = 1");

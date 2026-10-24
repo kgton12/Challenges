@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class FizzBuzzTest
 {
-    [Test, Order(1)]
+    [Test]
     public void FizzBuzzTest_1()
     {
         int input = 1;
@@ -15,7 +15,7 @@ public class FizzBuzzTest
         Assert.That(actual, Is.EqualTo(expected));
     }
 
-    [Test, Order(2)]
+    [Test]
     public void FizzBuzzTest_3()
     {
         int input = 3;
@@ -26,7 +26,7 @@ public class FizzBuzzTest
         Assert.That(actual, Is.EqualTo(expected));
     }
 
-    [Test, Order(3)]
+    [Test]
     public void FizzBuzzTest_5()
     {
         int input = 5;
@@ -37,7 +37,7 @@ public class FizzBuzzTest
         Assert.That(actual, Is.EqualTo(expected));
     }
 
-    [Test, Order(4)]
+    [Test]
     public void FizzBuzzTest_15()
     {
         int input = 15;

@@ -11,7 +11,6 @@ public class SumOfDigitsDigitalRootTest
     [TestCase(992, ExpectedResult = 2)]
     [TestCase(167346, ExpectedResult = 9)]
     [TestCase(999999999999, ExpectedResult = 9)]
-    [Order(1)]
     public int Tests(long n)
     {
         return SumOfDigitsDigitalRoot.DigitalRoot(n);

@@ -5,7 +5,6 @@ namespace CodeWarsTest.Completed;
 public class RockPaperScissorsTest
 {
     [Test]
-    [Order(1)]
     public void Player1Win()
     {
         using (Assert.EnterMultipleScope())
@@ -17,7 +16,6 @@ public class RockPaperScissorsTest
     }
 
     [Test]
-    [Order(2)]
     public void Player2Win()
     {
         using (Assert.EnterMultipleScope())
@@ -29,7 +27,6 @@ public class RockPaperScissorsTest
     }
 
     [Test]
-    [Order(3)]
     public void Draw()
     {
         using (Assert.EnterMultipleScope())

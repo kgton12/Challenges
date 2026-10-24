@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class AreaOrPerimeterClassTest
 {
-    [Test, Order(1)]
+    [Test]
     public void FixedTest()
     {
         using (Assert.EnterMultipleScope())

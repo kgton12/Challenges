@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class SplitInPartsClassTest
 {
-    [TestCase, Order(1)]
+    [TestCase]
     //Fixed values
     public void SplitString1()
     {
@@ -12,7 +12,7 @@ public class SplitInPartsClassTest
         Assert.That(SplitInPartsClass.SplitInParts(str, 3), Is.EqualTo("sup erc ali fra gil ist ice xpi ali doc iou s"));
     }
 
-    [TestCase, Order(2)]
+    [TestCase]
     //Fixed values
     public void SplitString2()
     {
@@ -20,7 +20,7 @@ public class SplitInPartsClassTest
         Assert.That(SplitInPartsClass.SplitInParts(str, 3), Is.EqualTo("Hel loK ata"));
     }
 
-    [TestCase, Order(3)]
+    [TestCase]
     //Fixed values
     public void SplitString3()
     {
@@ -28,7 +28,7 @@ public class SplitInPartsClassTest
         Assert.That(SplitInPartsClass.SplitInParts(str, 1), Is.EqualTo("H e l l o K a t a"));
     }
 
-    [TestCase, Order(4)]
+    [TestCase]
     //Fixed values
     public void SplitString4()
     {

@@ -1,10 +1,10 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class SumOfArraySinglesTest
 {
-    [Test, Order(1)]
+    [Test]
     public void SampleTest()
     {
         using (Assert.EnterMultipleScope())

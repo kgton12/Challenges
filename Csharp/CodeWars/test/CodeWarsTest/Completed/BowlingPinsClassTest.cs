@@ -5,7 +5,7 @@ namespace CodeWarsTest.Completed;
 [TestFixture]
 public class BowlingPinsClassTest
 {
-    [Test, Order(1)]
+    [Test]
     public void ExampleTests()
     {
         int[] testArray = [1, 2, 3];
@@ -15,7 +15,7 @@ public class BowlingPinsClassTest
         Assert.That(BowlingPinsClass.BowlingPins(testArray), Is.EqualTo("I I   I\n I   I \n  I    \n   I   "));
     }
 
-    [Test, Order(2)]
+    [Test]
     public void RandomTests()
     {
         for (int i = 0; i < 50; i++)

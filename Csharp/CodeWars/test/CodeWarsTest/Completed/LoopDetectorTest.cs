@@ -139,7 +139,7 @@ public class LoopDetectorTest
         return (arr, false);
     }
 
-    [Test(Description = "Sample Tests that should return true"), Order(1)]
+    [Test(Description = "Sample Tests that should return true")]
     [TestCase(new int[] { 1, 2, 3, 4, 2 }, true, Description = "{1,2,3,4,2}")]
     [TestCase(new int[] { 0 }, true, Description = "{0}")]
     [TestCase(new int[] { 1, 0 }, true, Description = "{1,0}")]
@@ -149,7 +149,7 @@ public class LoopDetectorTest
         Assert.That(LoopDetector.HasLoop(arr), Is.EqualTo(expected));
     }
 
-    [Test(Description = "Sample Tests that should return false"), Order(2)]
+    [Test(Description = "Sample Tests that should return false")]
     [TestCase(new int[] { 1, 2, 3, 4, 5 }, false, Description = "{1,2,3,4,5}")]
     [TestCase(new int[] { 3, 2, 1, 4 }, false, Description = "{3,2,1,4}")]
     [TestCase(new int[] { }, false, Description = "{}")]
@@ -158,25 +158,25 @@ public class LoopDetectorTest
         Assert.That(LoopDetector.HasLoop(arr), Is.EqualTo(expected));
     }
 
-    [Test(Description = "Random self loops (loop at index 0)"), Order(3)]
+    [Test(Description = "Random self loops (loop at index 0)")]
     public void RunSelf() => RunTest(LoopDetectorTest.GenerateSelfLoop, 10);
 
-    [Test(Description = "Random two-node loops (loop includes index 0 and 1)"), Order(4)]
+    [Test(Description = "Random two-node loops (loop includes index 0 and 1)")]
     public void RunTwoNode() => RunTest(LoopDetectorTest.GenerateTwoNodeLoop, 10);
 
-    [Test(Description = "Random larger loops (index 0 in the cycle)"), Order(5)]
+    [Test(Description = "Random larger loops (index 0 in the cycle)")]
     public void RunLarge() => RunTest(LoopDetectorTest.GenerateLargeLoop, 10);
 
-    [Test(Description = "Random large loops with no zero value"), Order(6)]
+    [Test(Description = "Random large loops with no zero value")]
     public void RunNoZero() => RunTest(LoopDetectorTest.GenerateLargeRandomLoopNoZero, 10);
 
-    [Test(Description = "Random no loops (chains that end out of bounds)"), Order(7)]
+    [Test(Description = "Random no loops (chains that end out of bounds)")]
     public void RunLoopless() => RunTest(LoopDetectorTest.GenerateNoLoop, 10);
 
-    [Test(Description = "Random empty array cases"), Order(8)]
+    [Test(Description = "Random empty array cases")]
     public void RunEmpty() => RunTest(LoopDetectorTest.GenerateEmpty, 5);
 
-    [Test(Description = "Random unreachable 0s"), Order(9)]
+    [Test(Description = "Random unreachable 0s")]
     public void RunUnreachable() => RunTest(LoopDetectorTest.GenerateZeroUnreachable, 5);
 
     private static void RunTest(Func<(int[], bool)> generator, int numberOfTests)
@@ -188,7 +188,7 @@ public class LoopDetectorTest
         }
     }
 
-    [Test(Description = "Random mixed types including traps"), Order(10)]
+    [Test(Description = "Random mixed types including traps")]
     public static void MixedTests()
     {
         List<Func<(int[], bool)>> generators =

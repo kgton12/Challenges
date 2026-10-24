@@ -1,11 +1,11 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class RgbToHexConversionTest
 {
     [Test]
-    [Order(1)]
+    
     public void FixedTests()
     {
         using (Assert.EnterMultipleScope())

@@ -1,18 +1,18 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class AsciiTotalTest
 {
     [Test, Description("An empty string should return zero")]
-    [Order(1)]
+    
     public void ZeroTest()
     {
         Assert.That(ASCIITotal.UniTotal(""), Is.Zero);
     }
 
     [Test, Description("Should work with single letters")]
-    [Order(2)]
+    
     public void SingleTest()
     {
         using (Assert.EnterMultipleScope())
@@ -26,14 +26,14 @@ public class AsciiTotalTest
     }
 
     [Test, Description("Should work with multiple letters")]
-    [Order(3)]
+    
     public void MultipleTest()
     {
         Assert.That(ASCIITotal.UniTotal("aaa"), Is.EqualTo(291));
     }
 
     [Test, Description("Should work with sentence and spaces")]
-    [Order(4)]
+    
     public void SentenceTest()
     {
         Assert.That(ASCIITotal.UniTotal("Mary Had A Little Lamb"), Is.EqualTo(1873));

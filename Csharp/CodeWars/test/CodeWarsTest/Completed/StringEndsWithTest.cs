@@ -24,7 +24,6 @@ public class StringEndsWithTest
         ];
 
     [Test, TestCaseSource(nameof(sampleTestCases))]
-    [Order(1)]
     public void SampleTest(string str, string ending, bool expected)
     {
         bool actual = StringEndsWith.Solution(str, ending);

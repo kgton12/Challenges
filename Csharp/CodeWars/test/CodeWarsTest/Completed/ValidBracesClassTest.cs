@@ -4,28 +4,28 @@ namespace CodeWarsTest.Completed;
 
 public class ValidBracesClassTest
 {
-    [Test, Order(1)]
+    [Test]
     public void Test1()
     {
         Assert.That(ValidBracesClass.ValidBraces("(){}[]"), Is.True);
     }
 
-    [Test, Order(2)]
+    [Test]
     public void Test2()
     {
         Assert.That(ValidBracesClass.ValidBraces("([{}])"), Is.True);
     }
-    [Test, Order(3)]
+    [Test]
     public void Test3()
     {
         Assert.That(ValidBracesClass.ValidBraces("(}"), Is.False);
     }
-    [Test, Order(4)]
+    [Test]
     public void Test4()
     {
         Assert.That(ValidBracesClass.ValidBraces("[(])"), Is.False);
     }
-    [Test, Order(5)]
+    [Test]
     public void Test5()
     {
         Assert.That(ValidBracesClass.ValidBraces("[({})](]"), Is.False);

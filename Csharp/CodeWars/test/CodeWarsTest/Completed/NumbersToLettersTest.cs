@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class NumbersToLettersTest
 {
-    [Test, Order(1)]
+    [Test]
     public void ExampleTest1()
     {
         string expected = "codewars";
@@ -12,7 +12,7 @@ public class NumbersToLettersTest
         Assert.That(actual, Is.EqualTo(expected));
     }
 
-    [Test, Order(2)]
+    [Test]
     public void ExampleTest2()
     {
         string expected = "btswmdsbd kkw";
@@ -20,7 +20,7 @@ public class NumbersToLettersTest
         Assert.That(actual, Is.EqualTo(expected));
     }
 
-    [Test, Order(3)]
+    [Test]
     public void ExampleTest3()
     {
         string expected = "wc";

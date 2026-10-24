@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class ValidPhoneNumberClassTest
 {
-    [Test, Order(1)]
+    [Test]
     public void Tests()
     {
         using (Assert.EnterMultipleScope())

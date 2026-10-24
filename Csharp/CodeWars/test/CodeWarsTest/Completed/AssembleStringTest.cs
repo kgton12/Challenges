@@ -13,7 +13,7 @@ public class AssembleStringTest
         Assert.That(actual, Is.EqualTo(expected), message);
     }
 
-    [Test, Order(1)]
+    [Test]
     public void SampleTests()
     {
         DoTest(["a*cde", "*bcde", "abc*e"], "abcde");
@@ -21,7 +21,7 @@ public class AssembleStringTest
         DoTest(["*ashtag ** *", "h*sht*g *> *", "has*tag -* *"], "hashtag -> #");
     }
 
-    [Test, Order(2)]
+    [Test]
     public void SpecialTests()
     {
         DoTest(["abcde", "abcde", "abcde"], "abcde");
@@ -30,7 +30,7 @@ public class AssembleStringTest
         DoTest(["", "", ""], "");
     }
 
-    [Test, Order(3)]
+    [Test]
     public void RandomTests()
     {
         Random random = new();

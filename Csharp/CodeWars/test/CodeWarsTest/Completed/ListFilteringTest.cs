@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class ListFilteringTest
 {
-    [Test, Order(1)]
+    [Test]
     public void GetIntegersFromList_MixedValues_ShouldPass_1()
     {
         var list = new List<object>() { 1, 2, "a", "b" };
@@ -12,7 +12,7 @@ public class ListFilteringTest
         var actual = ListFiltering.GetIntegersFromList(list);
         Assert.That(actual, Is.EqualTo(expected));
     }
-    [Test, Order(2)]
+    [Test]
     public void GetIntegersFromList_MixedValues_ShouldPass_2()
     {
         var list = new List<object>() { 1, "a", "b", 0, 15 };
@@ -20,7 +20,7 @@ public class ListFilteringTest
         var actual = ListFiltering.GetIntegersFromList(list);
         Assert.That(actual, Is.EqualTo(expected));
     }
-    [Test, Order(3)]
+    [Test]
     public void GetIntegersFromList_MixedValues_ShouldPass_3()
     {
         var list = new List<object>() { 1, 2, "aasf", "1", "123", 123 };

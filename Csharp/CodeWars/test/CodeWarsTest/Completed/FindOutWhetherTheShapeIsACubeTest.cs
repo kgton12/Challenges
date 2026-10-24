@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class FindOutWhetherTheShapeIsACubeTest
 {
-    [Test, Order(1)]
+    [Test]
     public void ShouldReturnFalse()
     {
         using (Assert.EnterMultipleScope())
@@ -14,7 +14,7 @@ public class FindOutWhetherTheShapeIsACubeTest
         }
     }
 
-    [Test, Order(2)]
+    [Test]
     public void ShouldReturnTrue()
     {
         using (Assert.EnterMultipleScope())

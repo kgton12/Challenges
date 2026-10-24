@@ -1,25 +1,25 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class CurryingFunctionsMultiplyAllElementsInAnArrayTest
 {
     [Test, Description("must return an array")]
-    [Order(1)]
+    
     public void ArrayTest()
     {
         Assert.That(CurryingFunctionsMultiplyAllElementsInAnArray.MultiplyAll([1])(1).GetType().IsArray, Is.True);
     }
 
     [Test, Description("array has correct length")]
-    [Order(2)]
+    
     public void LengthTest()
     {
         Assert.That(CurryingFunctionsMultiplyAllElementsInAnArray.MultiplyAll([1, 2])(1).Length, Is.EqualTo(2));
     }
 
     [Test, Description("returned array has correct values")]
-    [Order(3)]
+    
     public void ValuesTest()
     {
         using (Assert.EnterMultipleScope())

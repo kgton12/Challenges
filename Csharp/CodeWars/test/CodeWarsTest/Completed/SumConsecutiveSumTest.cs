@@ -8,7 +8,6 @@ public class SumConsecutiveSumTest
     static readonly Random rand = new(DateTime.Now.Millisecond);
 
     [Test]
-    [Order(1)]
     public void TestMultipleSubsets()
     {
         var arr = new BigInteger[] { 1, 2, 5, 6, 10, 11, 12 };
@@ -17,7 +16,6 @@ public class SumConsecutiveSumTest
     }
 
     [Test]
-    [Order(2)]
     public void BasicTest()
     {
         var arrays = new BigInteger[][]
@@ -36,7 +34,6 @@ public class SumConsecutiveSumTest
     }
 
     [Test]
-    [Order(3)]
     public void TestLargeNumbers()
     {
         var large = new BigInteger[][]
@@ -45,12 +42,14 @@ public class SumConsecutiveSumTest
             [BigInteger.Parse("100000000000"),BigInteger.Parse("100000000001"),BigInteger.Parse("100000000002")]
         };
 
-        Assert.That(SumConsecutiveSum.ConsecutiveSum(large[0]), Is.EqualTo(3));
-        Assert.That(SumConsecutiveSum.ConsecutiveSum(large[1]), Is.EqualTo(6));
+        using (Assert.EnterMultipleScope())
+        {
+            Assert.That(SumConsecutiveSum.ConsecutiveSum(large[0]), Is.EqualTo(3));
+            Assert.That(SumConsecutiveSum.ConsecutiveSum(large[1]), Is.EqualTo(6));
+        }
     }
 
     [Test]
-    [Order(4)]
     public void TestSingleElement()
     {
         var arr = new BigInteger[] { 1 };
@@ -59,7 +58,6 @@ public class SumConsecutiveSumTest
     }
 
     [Test]
-    [Order(5)]
     public void TestTwoAndConsecutives()
     {
         var arr = new BigInteger[] { 50, 51 };
@@ -68,7 +66,6 @@ public class SumConsecutiveSumTest
     }
 
     [Test]
-    [Order(6)]
     public void TestNoConsecutives()
     {
         var arr = new BigInteger[] { 10, 20, 30, 40 };
@@ -77,7 +74,6 @@ public class SumConsecutiveSumTest
     }
 
     [Test]
-    [Order(7)]
     public void TestAllConsecutives()
     {
         var arr = new BigInteger[] { 1, 2, 3, 4, 5 };
@@ -86,7 +82,6 @@ public class SumConsecutiveSumTest
     }
 
     [Test]
-    [Order(8)]
     public void TestWithDuplicates()
     {
         var arr1 = new BigInteger[] { 8, 8, 8, 8, 3, 8, 8, 3, 4, 5, 6, 5, 1, 2, 2, 6, 6, 6, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8 };
@@ -95,12 +90,14 @@ public class SumConsecutiveSumTest
         int actual1 = SumConsecutiveSum.ConsecutiveSum(arr1);
         int actual2 = SumConsecutiveSum.ConsecutiveSum(arr2);
 
-        Assert.That(actual1, Is.EqualTo(9));
-        Assert.That(actual2, Is.EqualTo(ConsecutiveSum(Shuffle(arr2))));
+        using (Assert.EnterMultipleScope())
+        {
+            Assert.That(actual1, Is.EqualTo(9));
+            Assert.That(actual2, Is.EqualTo(ConsecutiveSum(Shuffle(arr2))));
+        }
     }
 
     [Test]
-    [Order(9)]
     public void TestLongSequence()
     {
         var arr = new BigInteger[] { 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 11, 12, 13, 14 };
@@ -109,7 +106,6 @@ public class SumConsecutiveSumTest
     }
 
     [Test]
-    [Order(10)]
     public void TestLongConsecutiveSequence()
     {
         var listaNums = new BigInteger[10000];
@@ -125,7 +121,6 @@ public class SumConsecutiveSumTest
     }
 
     [Test]
-    [Order(11)]
     public void TestNonConsecutiveSequence()
     {
         var arr = new BigInteger[] { 1, 3, 5, 7, 9, 11, 13 };
@@ -134,7 +129,6 @@ public class SumConsecutiveSumTest
     }
 
     [Test]
-    [Order(12)]
     public void AllConsecutivesBigNumbersTest()
     {
         var listaConsecutivos = new BigInteger[1000];
@@ -154,7 +148,6 @@ public class SumConsecutiveSumTest
     }
 
     [Test]
-    [Order(13)]
     public void AllNonConsecutivesTest()
     {
         var nonConsecutivesList = new BigInteger[1000];
@@ -171,7 +164,6 @@ public class SumConsecutiveSumTest
     }
 
     [Test]
-    [Order(14)]
     public void AllNonConsecutivesDuplicatesTest()
     {
         var nonConsecutivesList = new List<BigInteger>();
@@ -197,7 +189,6 @@ public class SumConsecutiveSumTest
     }
 
     [Test]
-    [Order(15)]
     public void TestRandomMultipleArrays()
     {
         for (int i = 0; i < 10; i++)
@@ -210,7 +201,6 @@ public class SumConsecutiveSumTest
     }
 
     [Test]
-    [Order(16)]
     public void SmallRandomConsecutivesTest()
     {
         for (int i = 0; i < 10; i++)
@@ -223,7 +213,6 @@ public class SumConsecutiveSumTest
     }
 
     [Test]
-    [Order(17)]
     public void MediumRandomConsecutivesTest()
     {
         for (int i = 0; i < 20; i++)
@@ -236,7 +225,6 @@ public class SumConsecutiveSumTest
     }
 
     [Test]
-    [Order(18)]
     public void BigRandomConsecutivesTest()
     {
         for (int i = 0; i < 10; i++)
@@ -249,7 +237,6 @@ public class SumConsecutiveSumTest
     }
 
     [Test]
-    [Order(19)]
     public void DuplicatesRandomTest()
     {
         for (int i = 0; i < 10; i++)
@@ -262,7 +249,6 @@ public class SumConsecutiveSumTest
     }
 
     [Test]
-    [Order(20)]
     public void NonConsecutivesRandomTest()
     {
         for (int i = 0; i < 10; i++)

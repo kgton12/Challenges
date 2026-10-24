@@ -1,10 +1,10 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed
 {
     public class RegexpBasicsIsItAEightBitSignedNumberTest
     {
-        [Test, Order(1)]
+        [Test]
         public void BasicTests()
         {
             using (Assert.EnterMultipleScope())
@@ -34,7 +34,7 @@ namespace CodeWarsTest.Completed
             }
         }
 
-        [Test, Order(2)]
+        [Test]
         public void ExtraTests()
         {
             for (int i = -210; i < 210; i++)

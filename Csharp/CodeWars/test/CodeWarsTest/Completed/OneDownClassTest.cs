@@ -5,7 +5,7 @@ namespace CodeWarsTest.Completed;
 [TestFixture]
 public class OneDownClassTest
 {
-    [Test, Order(1)]
+    [Test]
     [TestCase("Ifmmp", ExpectedResult = "Hello")]
     [TestCase("Uif usjdl up uijt lbub jt tjnqmf", ExpectedResult = "The trick to this kata is simple")]
     [TestCase("XiBu BcPvU dSbaz UfYu", ExpectedResult = "WhAt AbOuT cRaZy TeXt")]

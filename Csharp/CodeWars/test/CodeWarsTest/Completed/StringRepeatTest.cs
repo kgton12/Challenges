@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class StringRepeatTest
 {
-    [Test(Description = "Fixed Tests"), Order(1)]
+    [Test(Description = "Fixed Tests")]
     public void FixedTests()
     {
         using (Assert.EnterMultipleScope())

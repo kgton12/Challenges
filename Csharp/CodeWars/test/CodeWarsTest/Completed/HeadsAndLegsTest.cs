@@ -1,10 +1,10 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class HeadsAndLegsTest
 {
-    [Test, Order(1)]
+    [Test]
     public void ValidNumberTests()
     {
         using (Assert.EnterMultipleScope())
@@ -18,7 +18,7 @@ public class HeadsAndLegsTest
         }
     }
 
-    [Test, Order(2)]
+    [Test]
     public void InvalidNumberTests()
     {
         using (Assert.EnterMultipleScope())
@@ -30,7 +30,7 @@ public class HeadsAndLegsTest
         }
     }
 
-    [Test, Order(3)]
+    [Test]
     public void EdgeCasesTests()
     {
         using (Assert.EnterMultipleScope())

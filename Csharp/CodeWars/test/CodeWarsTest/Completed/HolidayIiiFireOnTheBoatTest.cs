@@ -1,10 +1,10 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class HolidayIiiFireOnTheBoatTest
 {
-    [Test, Order(1)]
+    [Test]
     public void BasicTests()
     {
         using (Assert.EnterMultipleScope())

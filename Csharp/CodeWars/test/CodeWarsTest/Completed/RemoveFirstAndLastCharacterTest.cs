@@ -1,10 +1,10 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class RemoveFirstAndLastCharacterTest
 {
-    [Test, Order(1)]
+    [Test]
     public void Test1()
     {
         using (Assert.EnterMultipleScope())

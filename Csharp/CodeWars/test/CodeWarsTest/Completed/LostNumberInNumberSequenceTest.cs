@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class LostNumberInNumberSequenceTest
 {
-    [Test, Order(1)]
+    [Test]
     public void MissingNumberTest()
     {
         using (Assert.EnterMultipleScope())
@@ -14,7 +14,7 @@ public class LostNumberInNumberSequenceTest
         }
     }
 
-    [Test, Order(2)]
+    [Test]
     public void NoMissingNumberTest()
     {
         using (Assert.EnterMultipleScope())
@@ -24,7 +24,7 @@ public class LostNumberInNumberSequenceTest
         }
     }
 
-    [Test, Order(3)]
+    [Test]
     public void NilTest()
     {
         Assert.That(LostNumberInNumberSequence.FindDeletedNumber([], []), Is.Zero);

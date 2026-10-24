@@ -1,10 +1,10 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class CountingDuplicatesTest
 {
-    [Test, Order(1)]
+    [Test]
     public void KataTests()
     {
         using (Assert.EnterMultipleScope())

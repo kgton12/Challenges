@@ -4,11 +4,11 @@ namespace CodeWarsTest.Completed;
 
 public class LeastLargerClassTest
 {
-    [Test, Description("No Least Larger Exists (=> Return -1)"), Order(1)]
+    [Test, Description("No Least Larger Exists (=> Return -1)")]
     public void NoLeastLargerExists() =>
             Assert.That(LeastLargerClass.LeastLarger([4, 1, 3, 5, 6], 4), Is.EqualTo(-1), "Incorrect output for Kata.LeastLarger(new[] { 4, 1, 3, 5, 6 }, 4):");
 
-    [Test, Description("Least Larger Exists"), Order(2)]
+    [Test, Description("Least Larger Exists")]
     public void LeastLargerExists()
     {
         using (Assert.EnterMultipleScope())

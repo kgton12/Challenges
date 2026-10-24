@@ -5,7 +5,6 @@ namespace CodeWarsTest.Completed;
 public class WillYouMakeItTest
 {
     [Test]
-    [Order(1)]
     public void SampleTest()
     {
         using (Assert.EnterMultipleScope())

@@ -4,31 +4,31 @@ namespace CodeWarsTest.Completed;
 
 public class RowOfTheOddTriangleTest
 {
-    [Test, Order(1)]
+    [Test]
     public void FixedTest1()
     {
         Assert.That(RowOfTheOddTriangle.OddRow(1), Is.EqualTo(new long[] { 1 }));
     }
 
-    [Test, Order(2)]
+    [Test]
     public void FixedTest2()
     {
         Assert.That(RowOfTheOddTriangle.OddRow(2), Is.EqualTo(new long[] { 3, 5 }));
     }
 
-    [Test, Order(3)]
+    [Test]
     public void FixedTest13()
     {
         Assert.That(RowOfTheOddTriangle.OddRow(13), Is.EqualTo(new long[] { 157, 159, 161, 163, 165, 167, 169, 171, 173, 175, 177, 179, 181 }));
     }
 
-    [Test, Order(4)]
+    [Test]
     public void FixedTest19()
     {
         Assert.That(RowOfTheOddTriangle.OddRow(19), Is.EqualTo(new long[] { 343, 345, 347, 349, 351, 353, 355, 357, 359, 361, 363, 365, 367, 369, 371, 373, 375, 377, 379 }));
     }
 
-    [Test, Order(5)]
+    [Test]
     public void FixedTest41()
     {
         Assert.That(RowOfTheOddTriangle.OddRow(41), Is.EqualTo(new long[]{1641, 1643, 1645, 1647, 1649, 1651, 1653, 1655, 1657, 1659, 1661, 1663, 1665, 1667, 1669,

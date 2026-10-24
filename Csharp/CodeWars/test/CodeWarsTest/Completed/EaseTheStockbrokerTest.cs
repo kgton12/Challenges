@@ -5,7 +5,7 @@ namespace CodeWarsTest.Completed;
 [TestFixture]
 public class EaseTheStockbrokerTest
 {
-    [Test, Order(1)]
+    [Test]
     public void Test0()
     {
         String l = "GOOG 90 160.45 B, JPMC 67 12.8 S, MYSPACE 24.0 210 B, CITI 50 450 B, CSCO 100 55.5 S";
@@ -13,7 +13,7 @@ public class EaseTheStockbrokerTest
         Assert.That(EaseTheStockbroker.BalanceStatements(l), Is.EqualTo(r));
     }
 
-    [Test, Order(2)]
+    [Test]
     public void Test1()
     {
         String l = "GOOG 300 542.0 B, AAPL 50 145.0 B, CSCO 250.0 29 B, GOOG 200 580.0 S";
@@ -21,7 +21,7 @@ public class EaseTheStockbrokerTest
         Assert.That(EaseTheStockbroker.BalanceStatements(l), Is.EqualTo(r));
     }
 
-    [Test, Order(3)]
+    [Test]
     public void Test2()
     {
         String l = "ZNGA 1300 2.66 B, CLH15.NYM 50 56.32 B, OWW 1000 11.623 B, OGG 20 580.1 B";
@@ -29,7 +29,7 @@ public class EaseTheStockbrokerTest
         Assert.That(EaseTheStockbroker.BalanceStatements(l), Is.EqualTo(r));
     }
 
-    [Test, Order(4)]
+    [Test]
     public void Test3()
     {
         String l = "GOOG 300 542.93 B, CLH15.NYM 50 56.32 S, CSCO 250 29.46 B, OGG 20 580.1 B";
@@ -37,7 +37,7 @@ public class EaseTheStockbrokerTest
         Assert.That(EaseTheStockbroker.BalanceStatements(l), Is.EqualTo(r));
     }
 
-    [Test, Order(5)]
+    [Test]
     public void Test4()
     {
         String l = "ZNGA 1300 2.66 B, GOOG 200 580.12 S, OWW 1000 11.623 B, BAC 200 16.67 B";
@@ -45,7 +45,7 @@ public class EaseTheStockbrokerTest
         Assert.That(EaseTheStockbroker.BalanceStatements(l), Is.EqualTo(r));
     }
 
-    [Test, Order(6)]
+    [Test]
     public void Test5()
     {
         String l = "ZNGA 1300 2.66 S, CLH15.NYM 50 56.32 S, OWW 1000 11.623 S, OGG 20 580.1 S";
@@ -53,7 +53,7 @@ public class EaseTheStockbrokerTest
         Assert.That(EaseTheStockbroker.BalanceStatements(l), Is.EqualTo(r));
     }
 
-    [Test, Order(7)]
+    [Test]
     public void Test6()
     {
         String l = "";
@@ -61,7 +61,7 @@ public class EaseTheStockbrokerTest
         Assert.That(EaseTheStockbroker.BalanceStatements(l), Is.EqualTo(r));
     }
 
-    [Test, Order(8)]
+    [Test]
     public void Test7()
     {
         String l = "ZNGA 1300 2.66, CLH15.NYM 50 56.32 S, OWW 1000 11.623 S, OGG 20 580.1 S";
@@ -69,7 +69,7 @@ public class EaseTheStockbrokerTest
         Assert.That(EaseTheStockbroker.BalanceStatements(l), Is.EqualTo(r));
     }
 
-    [Test, Order(9)]
+    [Test]
     public void Test8()
     {
         String l = "CAP 1300 .2 B, CLH16.NYM 50 56 S, OWW 1000 11 S, OGG 20 580.1 S";

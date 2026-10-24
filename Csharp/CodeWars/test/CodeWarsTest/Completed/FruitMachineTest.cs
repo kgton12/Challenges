@@ -6,7 +6,6 @@ namespace CodeWarsTest.Completed;
 class FruitMachineTest
 {
     [TestCase]
-    [Order(1)]
     public void BasicTest1()
     {
         string[] reel = ["Wild", "Star", "Bell", "Shell", "Seven", "Cherry", "Bar", "King", "Queen", "Jack"];
@@ -16,7 +15,6 @@ class FruitMachineTest
     }
 
     [TestCase]
-    [Order(2)]
     public void BasicTest2()
     {
         string[] reel1 = ["Wild", "Star", "Bell", "Shell", "Seven", "Cherry", "Bar", "King", "Queen", "Jack"];
@@ -28,7 +26,6 @@ class FruitMachineTest
     }
 
     [TestCase]
-    [Order(3)]
     public void BasicTest3()
     {
         string[] reel1 = ["King", "Cherry", "Bar", "Jack", "Seven", "Queen", "Star", "Shell", "Bell", "Wild"];
@@ -40,7 +37,6 @@ class FruitMachineTest
     }
 
     [TestCase]
-    [Order(4)]
     public void BasicTest4()
     {
         string[] reel1 = ["King", "Jack", "Wild", "Bell", "Star", "Seven", "Queen", "Cherry", "Shell", "Bar"];

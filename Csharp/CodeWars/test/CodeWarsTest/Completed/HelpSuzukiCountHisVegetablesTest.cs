@@ -44,13 +44,13 @@ public class HelpSuzukiCountHisVegetablesTest
       "carrot mushroom chopsticks mushroom celery turnip onion carrot turnip cucumber carrot potato mushroom turnip " +
       "mushroom cabbage tofu turnip turnip turnip mushroom tofu potato pepper turnip potato turnip celery carrot turnip";
 
-    [Test, Order(1)]
+    [Test]
     public void FixedTest1()
     {
         Assert.That(HelpSuzukiCountHisVegetables.CountVegetables(str1), Is.EqualTo(grp1));
     }
 
-    [Test, Order(2)]
+    [Test]
     public void FixedTest2()
     {
         Assert.That(HelpSuzukiCountHisVegetables.CountVegetables(str2), Is.EqualTo(grp2));

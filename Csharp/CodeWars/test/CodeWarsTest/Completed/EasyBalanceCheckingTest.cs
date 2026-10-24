@@ -1,4 +1,4 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
@@ -12,7 +12,7 @@ public class EasyBalanceCheckingTest
         Assert.That(ans, Is.EqualTo(exp));
     }
 
-    [Test, Order(1)]
+    [Test]
     public static void Test1()
     {
         String b1 = "1000.00!=\n125 Market !=:125.45\n126 Hardware =34.95\n127 Video! 7.45\n128 Book   :14.32\n129 Gasoline ::16.10";

@@ -9,7 +9,7 @@ public class InternationalMorseCodeEncryptionTest
         Assert.That(InternationalMorseCodeEncryption.ToMorse(english), Is.EqualTo(morse));
     }
 
-    [Test, Order(1)]
+    [Test]
     public void Test1()
     {
         string english = "HELLO WORLD";
@@ -17,7 +17,7 @@ public class InternationalMorseCodeEncryptionTest
         Test(morse, english);
     }
 
-    [Test, Order(2)]
+    [Test]
     public void Test2()
     {
         string english = "SOS";
@@ -25,7 +25,7 @@ public class InternationalMorseCodeEncryptionTest
         Test(morse, english);
     }
 
-    [Test, Order(3)]
+    [Test]
     public void Test3()
     {
         string english = "1836";
@@ -33,7 +33,7 @@ public class InternationalMorseCodeEncryptionTest
         Test(morse, english);
     }
 
-    [Test, Order(4)]
+    [Test]
     public void Test4()
     {
         string english = "THE QUICK BROWN FOX";
@@ -41,7 +41,7 @@ public class InternationalMorseCodeEncryptionTest
         Test(morse, english);
     }
 
-    [Test, Order(5)]
+    [Test]
     public void Test5()
     {
         string english = "JUMPED OVER THE";

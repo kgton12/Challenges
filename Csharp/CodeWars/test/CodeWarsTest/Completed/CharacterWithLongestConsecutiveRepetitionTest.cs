@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class CharacterWithLongestConsecutiveRepetitionTest
 {
-    [Test, Order(1)]
+    [Test]
     public void LongestAtTheBeginning()
     {
         using (Assert.EnterMultipleScope())
@@ -14,19 +14,19 @@ public class CharacterWithLongestConsecutiveRepetitionTest
         }
     }
 
-    [Test, Order(2)]
+    [Test]
     public void LongestAtTheEnd()
     {
         Assert.That(CharacterWithLongestConsecutiveRepetition.LongestRepetition("bbbaaabaaaa"), Is.EqualTo(new Tuple<char?, int>('a', 4)));
     }
 
-    [Test, Order(3)]
+    [Test]
     public void LongestInTheMiddle()
     {
         Assert.That(CharacterWithLongestConsecutiveRepetition.LongestRepetition("cbdeuuu900"), Is.EqualTo(new Tuple<char?, int>('u', 3)));
     }
 
-    [Test, Order(4)]
+    [Test]
     public void MultipleLongest()
     {
         using (Assert.EnterMultipleScope())
@@ -36,7 +36,7 @@ public class CharacterWithLongestConsecutiveRepetitionTest
         }
     }
 
-    [Test, Order(5)]
+    [Test]
     public void EmptyString()
     {
         Assert.That(CharacterWithLongestConsecutiveRepetition.LongestRepetition(""), Is.EqualTo(new Tuple<char?, int>(null, 0)));

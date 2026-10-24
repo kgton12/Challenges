@@ -1,11 +1,11 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class PiratesAreTheCannonsReadyTest
 {
     [Test, Description("should fire the cannons when ready")]
-    [Order(1)]
+    
     public void SampleAyeTest()
     {
         Dictionary<string, string> gunners = new Dictionary<string, string>
@@ -20,7 +20,7 @@ public class PiratesAreTheCannonsReadyTest
     }
 
     [Test, Description("should shiver me timbers if not ready")]
-    [Order(2)]
+    
     public void SampleNayTest()
     {
         Dictionary<string, string> gunners = new Dictionary<string, string>

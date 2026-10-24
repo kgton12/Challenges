@@ -5,7 +5,7 @@ namespace CodeWarsTest.Completed;
 
 public class FunWithEs6Classes1PeoplePeoplePeopleTest
 {
-    [Test, Description("should have the correct defaults"), Order(1)]
+    [Test, Description("should have the correct defaults")]
     public void DefaultArgsTest()
     {
         FunWithEs6Classes1PeoplePeoplePeoplePerson person = new();
@@ -19,7 +19,7 @@ public class FunWithEs6Classes1PeoplePeoplePeopleTest
         }
     }
 
-    [Test, Description("should work with a person Jane Doe"), Order(2)]
+    [Test, Description("should work with a person Jane Doe")]
     public void CustomTest()
     {
         FunWithEs6Classes1PeoplePeoplePeoplePerson person = new("Jane", "Doe", 25, "Female");

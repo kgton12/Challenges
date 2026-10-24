@@ -1,11 +1,11 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class TakeATenMinutesWalkTest
 {
     [Test]
-    [Order(1)]
+    
     public void SampleTests()
     {
         using (Assert.EnterMultipleScope())

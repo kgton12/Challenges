@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class SumMixedArrayTest
 {
-    [Test, Order(1)]
+    [Test]
     public void SampleTest()
     {
         using (Assert.EnterMultipleScope())

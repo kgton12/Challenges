@@ -4,7 +4,7 @@ namespace CodeWarsTest.Completed;
 
 public class SeeYouNextHappyYearTest
 {
-    [Test, Order(1)]
+    [Test]
     public void BasicValues()
     {
         using (Assert.EnterMultipleScope())
@@ -21,7 +21,7 @@ public class SeeYouNextHappyYearTest
         }
     }
 
-    [Test, Order(2)]
+    [Test]
     public void LargeValues()
     {
         using (Assert.EnterMultipleScope())

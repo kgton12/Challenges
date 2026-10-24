@@ -5,7 +5,6 @@ namespace CodeWarsTest.Completed;
 public class BeginnerReduceButGrowTest
 {
     [Test]
-    [Order(1)]
     public void BasicTests()
     {
         using (Assert.EnterMultipleScope())

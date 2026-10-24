@@ -24,9 +24,9 @@ public class ClosestToZeroTest
         }
     }
 
-    [Test, TestCaseSource(nameof(BasicTests)), Order(1)]
+    [Test, TestCaseSource(nameof(BasicTests))]
     public int? BasicTest(int[] arr) => ClosestToZero.Closest(arr);
 
-    [Test, TestCaseSource(nameof(DoubleTests)), Order(2)]
+    [Test, TestCaseSource(nameof(DoubleTests))]
     public int? DoubleTest(int[] arr) => ClosestToZero.Closest(arr);
 }

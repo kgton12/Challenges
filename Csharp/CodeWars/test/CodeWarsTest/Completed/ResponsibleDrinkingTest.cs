@@ -1,11 +1,11 @@
-﻿using CodeWars.Completed;
+using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 
 public class ResponsibleDrinkingTest
 {
 
-    [Test, Order(1)]
+    [Test]
     public void DrinkinTest1()
     {
         string expected = "1 glass of water";
@@ -13,7 +13,7 @@ public class ResponsibleDrinkingTest
         Assert.That(actual, Is.EqualTo(expected));
     }
 
-    [Test, Order(2)]
+    [Test]
     public void DrinkinTest3()
     {
         string expected = "10 glasses of water";

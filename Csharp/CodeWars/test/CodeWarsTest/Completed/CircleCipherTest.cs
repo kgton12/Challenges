@@ -5,7 +5,7 @@ namespace CodeWarsTest.Completed;
 
 public class CircleCipherTest
 {
-    [Test, Order(1)]
+    [Test]
     public void EncodeBasicTests()
     {
         using (Assert.EnterMultipleScope())
@@ -18,7 +18,7 @@ public class CircleCipherTest
         }
     }
 
-    [Test, Order(2)]
+    [Test]
     public void TrickyTests()
     {
         using (Assert.EnterMultipleScope())
@@ -33,7 +33,7 @@ public class CircleCipherTest
 
     }
 
-    [Test, Order(3)]
+    [Test]
     public void DecodeBasicTests()
     {
         using (Assert.EnterMultipleScope())
@@ -59,7 +59,7 @@ public class CircleCipherTest
         return s.ToString();
     }
 
-    [Test, Order(4)]
+    [Test]
     public void EncodeRandomTests()
     {
         for (int i = 0; i < 500; i++)
@@ -70,7 +70,7 @@ public class CircleCipherTest
         }
     }
 
-    [Test, Order(5)]
+    [Test]
     public void DecodeRandomTests()
     {
         for (var i = 0; i < 500; i++)
