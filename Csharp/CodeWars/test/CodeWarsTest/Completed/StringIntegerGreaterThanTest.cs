@@ -1,4 +1,4 @@
-﻿using CodeWars;
+﻿using CodeWars.Completed;
 
 namespace CodeWarsTest.Completed;
 

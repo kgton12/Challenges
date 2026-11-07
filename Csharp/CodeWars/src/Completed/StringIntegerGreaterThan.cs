@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 
-namespace CodeWars;
+namespace CodeWars.Completed;
 
 public class StringIntegerGreaterThan
 {
