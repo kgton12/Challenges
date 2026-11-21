@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace CodeWars;
+namespace CodeWars.Completed;
 
 public class TheRobberLanguage
 {
